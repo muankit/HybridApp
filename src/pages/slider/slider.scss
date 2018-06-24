@@ -1,0 +1,41 @@
+page-slider {
+    //next button is here
+    .bottom{
+        background-color: #E60052;
+        position:absolute;
+        bottom:0;
+        right: 5%;
+    }
+    //bullet color is here
+    .swiper-pagination-bullet-active{
+        background-color: #E60052 !important;
+    }
+
+    //main content background
+    .mainBackground{
+        background-image: url(../../assets/signUpBackground.jpg);
+        background-repeat: no-repeat center center fixed;
+        background-size: cover;
+    }
+    //slider div
+    .mainSlides{
+        background-color: white;
+        border-radius: 10px;
+        padding: 10px;
+        max-height: 300px;
+    }
+    //welcome text is here
+    .welcomeText{
+        position: relative;
+        text-align: center;
+        color: white;
+        font-size: 3em;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+    //welocme div for image
+    .welcomeDiv{
+        background-image: url(../../assets/welcomeImage.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+}

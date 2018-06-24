@@ -17,13 +17,28 @@ page-sign-up-faculty {
     .formDiv{
         position: relative;
         margin-top: 10%;
+        background-color: white;
+        text-align: center;
+        border-radius: 10px;
+       // box-shadow: 5px 10px #1c000000;
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.10);
+    }
+    .formList{
+        margin-top: 10px;
+    }
+    .item-md{
+        margin: 10px;
+        padding: 10px 0px;
+    }
+    .list-md{
+        margin: 20px;
     }
 
     //nextBtn is here
     .nextBtn{
         position: relative;
-        width: 100%;
-        text-align: center;
-        margin-top: 15%;
+        margin-top: 10%;
+        margin-bottom: 10%;
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.10);
     }
 }

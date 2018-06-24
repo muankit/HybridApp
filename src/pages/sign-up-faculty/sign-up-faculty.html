@@ -11,28 +11,33 @@
 
 <!-- sigh up text -->
 <div>
-  <h1 class="signUpText" style="margin-top: 40%;">Sign up</h1>
+  <h1 class="signUpText" style="margin-top: 20%;">Sign up</h1>
 </div>
 
 <!-- form div -->
   <div class="formDiv">
-    <ion-item>
-      <ion-input placeholder="FIRST NAME"></ion-input>
-    </ion-item>
-    <ion-item>
-      <ion-input placeholder="LAST NAME"></ion-input>
+    <ion-list class="formList">
+      <ion-item>
+          <ion-input placeholder="FIRST NAME"></ion-input>
+        </ion-item>
+        <ion-item>
+          <ion-input placeholder="LAST NAME"></ion-input>
+    
+        </ion-item>
+        <ion-item>
+          <ion-input placeholder="EMAIL"></ion-input>
+        </ion-item>
+        <ion-item>
+          <ion-input placeholder="PHONE"></ion-input>
+      </ion-item>
+    </ion-list>
 
-    </ion-item>
-    <ion-item>
-      <ion-input placeholder="EMAIL"></ion-input>
-    </ion-item>
-    <ion-item>
-      <ion-input placeholder="PHONE"></ion-input>
-    </ion-item>
+    <button ion-button class="nextBtn"
+            style="padding: 0px 50px 0px 50px; 
+                    background-color: #E60052; 
+                    border-radius: 25px; font-size: 1.3em; 
+                    font-family: sans-serif">NEXT</button>
 
   </div>
-
-  <!-- Next button -->
-  <button ion-button class="nextBtn"style="padding: 0px 50px 0px 50px; background-color: #E60052; border-radius: 25px; font-size: 1.3em; font-family: Arial, Helvetica, sans-serif">NEXT</button>
-
+  
 </ion-content>

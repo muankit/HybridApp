@@ -1,6 +1,6 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { ErrorHandler, NgModule } from '@angular/core';
-import { IonicApp, IonicErrorHandler, IonicModule } from 'ionic-angular';
+import { IonicApp, IonicErrorHandler, IonicModule, Slide } from 'ionic-angular';
 import { SplashScreen } from '@ionic-native/splash-screen';
 import { StatusBar } from '@ionic-native/status-bar';
 
@@ -10,6 +10,7 @@ import { LoginPage } from '../pages/login/login';
 import { AskPage } from '../pages/ask/ask';
 import { SignUpFacultyPage } from '../pages/sign-up-faculty/sign-up-faculty';
 import { SignUpInstitutePage } from '../pages/sign-up-institute/sign-up-institute';
+import { SliderPage } from '../pages/slider/slider';
 
 @NgModule({
   declarations: [
@@ -18,7 +19,8 @@ import { SignUpInstitutePage } from '../pages/sign-up-institute/sign-up-institut
     LoginPage,
     AskPage,
     SignUpFacultyPage,
-    SignUpInstitutePage
+    SignUpInstitutePage,
+    SliderPage
   ],
   imports: [
     BrowserModule,
@@ -31,7 +33,8 @@ import { SignUpInstitutePage } from '../pages/sign-up-institute/sign-up-institut
     LoginPage,
     AskPage,
     SignUpFacultyPage,
-    SignUpInstitutePage
+    SignUpInstitutePage,
+    SliderPage
   ],
   providers: [
     StatusBar,
