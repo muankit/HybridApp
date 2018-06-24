@@ -1,0 +1,82 @@
+page-login {
+
+    .background{
+        background-image: url(../assets/loginBackground.jpg);
+        background-repeat: no-repeat center center fixed;
+        background-size: cover;
+    }
+
+    //Circle  is here
+
+    .img-circle {
+        position: relative;
+        background-image: url(../assets/loginImage.jpg);
+        background-repeat: no-repeat center  center fixed;
+        background-size: cover;
+        border-radius: 50%;
+    }
+    .imgSpan {
+        text-align:center;
+        width:100%;
+        background:white;
+        bottom:0;
+        padding:20px 0;
+        opacity:0.5;
+    }
+    .imgCol{
+        position: relative;
+        margin-top: 19%;
+    }
+    .img-thumbnail {
+        display:inline-block;
+        overflow: hidden;
+        height: 150px;
+        border: 1px solid #000;
+    }
+    
+    //ends here
+
+    //login input is here
+    
+    .loginText{
+        position: relative;
+        margin-left: 40%;
+        margin-top: 10%;
+    }
+    .text-input-md{
+        margin: 25px 0px 8px 20px;
+    }
+
+    .inputClass{
+        position: relative;
+        width: 100%;
+       // left: 15%;
+        //top: 8%;
+        padding: 0px 40px 0px 40px;
+    }
+    .item-md{
+        padding: 16px 0px;
+        background-color: transparent;
+    }
+
+    //ends here
+
+
+    //Button class is here
+    .btnClass{
+        position: relative;
+        width: 100%;
+        text-align: center;
+        margin-top: 15%;
+    }
+    //end here
+
+    // btn 2 class
+    .btn2Class{
+        position: relative;
+        width: 100%;
+        text-align: center;
+        margin-top: 10%;
+    }
+    //end here
+}
