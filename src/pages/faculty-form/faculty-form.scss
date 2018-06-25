@@ -1,3 +1,47 @@
 page-faculty-form {
+    //circle is here
+    .img-circle {
+        position: relative;
+        //left: 55%;
+        //bottom: 8px;
+        background:#9b9999;
+        border-radius: 50%;
 
+    }
+    .imgSpan {
+        background-image: url(../../assets/imgs/addImage.png);
+        background-repeat: no-repeat;
+        background-size: auto;
+        text-align:center;
+        width:100%;
+       // background:white;
+        bottom:8px;
+        left: 6px;
+        padding:20px 0;
+        opacity:0.5;
+    }
+    .imgCol{
+        text-align: left;
+        width: 20%;
+        margin: 0%;
+        //margin-left: 40px;
+    }
+    .img-thumbnail {
+        display:inline-block;
+        overflow: hidden;
+        height: 50px;
+       // border: 1px solid #000;
+        //box-shadow: 0 2px 0 2px #dbdbdb;
+    }
+
+    //text col
+    .textCol{
+        text-align: left;
+    }
+    //ends here
+
+    //Add image text
+    .addText{
+        font-size: 1.2em;
+    }
 }

@@ -1,13 +1,8 @@
 import { Component } from '@angular/core';
-import { IonicPage, NavController, NavParams } from 'ionic-angular';
+import { IonicPage, NavController, NavParams, AlertController } from 'ionic-angular';
 import { TabsPage } from '../tabs/tabs';
+import { HomePage } from '../home/home';
 
-/**
- * Generated class for the LoginPage page.
- *
- * See https://ionicframework.com/docs/components/#navigation for more info on
- * Ionic pages and navigation.
- */
 
 @IonicPage()
 @Component({
@@ -16,13 +11,41 @@ import { TabsPage } from '../tabs/tabs';
 })
 export class LoginPage {
 
-  constructor(public navCtrl: NavController, public navParams: NavParams) {
+  constructor(public navCtrl: NavController, public navParams: NavParams , public alertCtrl : AlertController) {
   }
 
   ionViewDidLoad() {
     console.log('ionViewDidL  oad LoginPage');
   }
 
+  goToHome(){
+    let alert = this.alertCtrl.create({
+      title : 'Verify OTP',
+      inputs : [
+        {
+          name : 'OTP',
+          type : 'number',
+        }
+      ],
+      buttons : [
+        {
+          text : 'Cancel' , 
+          role : 'cancel',
+          handler :() => {
+            console.log("Cancel Clicked");
+          }
+        },
+        {
+          text : 'Send Otp',
+          role : 'send',
+          handler : () =>{
+            this.navCtrl.push(HomePage);     
+          }
+        }
+      ],
+    });
+    alert.present();
+  }
 
   newUserClick(){
     this.navCtrl.push(TabsPage);

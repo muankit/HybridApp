@@ -3,12 +3,6 @@ import { IonicPage, NavController, NavParams, AlertController } from 'ionic-angu
 import { FacultyFormPage } from '../faculty-form/faculty-form';
 import { SliderPage } from '../slider/slider';
 
-/**
- * Generated class for the SignUpFacultyPage page.
- *
- * See https://ionicframework.com/docs/components/#navigation for more info on
- * Ionic pages and navigation.
- */
 
 @IonicPage()
 @Component({

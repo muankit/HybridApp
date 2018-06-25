@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
-import { IonicPage, NavController, NavParams } from 'ionic-angular';
+import { IonicPage, NavController, NavParams, AlertController } from 'ionic-angular';
+import { SliderPage } from '../slider/slider';
 
 /**
  * Generated class for the SignUpInstitutePage page.
@@ -15,11 +16,39 @@ import { IonicPage, NavController, NavParams } from 'ionic-angular';
 })
 export class SignUpInstitutePage {
 
-  constructor(public navCtrl: NavController, public navParams: NavParams) {
+  constructor(public navCtrl: NavController, public navParams: NavParams , public alertCtrl : AlertController) {
   }
 
   ionViewDidLoad() {
     console.log('ionViewDidLoad SignUpInstitutePage');
   }
 
+  goToInstituteForm(){
+    let alert = this.alertCtrl.create({
+      title : 'Verify OTP',
+      inputs : [
+        {
+          name : 'OTP',
+          type : 'number',
+        }
+      ],
+      buttons : [
+        {
+          text : 'Cancel' , 
+          role : 'cancel',
+          handler :() => {
+            console.log("Cancel Clicked");
+          }
+        },
+        {
+          text : 'Send Otp',
+          role : 'send',
+          handler : () =>{
+            this.navCtrl.push(SliderPage);     
+          }
+        }
+      ],
+    });
+    alert.present();
+  }
 }

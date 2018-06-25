@@ -12,6 +12,8 @@ import { SignUpInstitutePage } from '../pages/sign-up-institute/sign-up-institut
 import { SliderPage } from '../pages/slider/slider';
 import { TabsPage } from '../pages/tabs/tabs';
 import { FacultyFormPage } from '../pages/faculty-form/faculty-form';
+import { InstituteFirstFormPage } from '../pages/institute-first-form/institute-first-form';
+import { InstituteSecondFormPage } from '../pages/institute-second-form/institute-second-form';
 
 @NgModule({
   declarations: [
@@ -22,7 +24,9 @@ import { FacultyFormPage } from '../pages/faculty-form/faculty-form';
     SignUpInstitutePage,
     SliderPage,
     TabsPage,
-    FacultyFormPage
+    FacultyFormPage,
+    InstituteFirstFormPage,
+    InstituteSecondFormPage
   ],
   imports: [
     BrowserModule,
@@ -37,7 +41,9 @@ import { FacultyFormPage } from '../pages/faculty-form/faculty-form';
     SignUpInstitutePage,
     SliderPage,
     TabsPage,
-    FacultyFormPage
+    FacultyFormPage,
+    InstituteFirstFormPage,
+    InstituteSecondFormPage
   ],
   providers: [
     StatusBar,

@@ -1,5 +1,7 @@
 import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
+import { FacultyFormPage } from '../faculty-form/faculty-form';
+import { InstituteFirstFormPage } from '../institute-first-form/institute-first-form';
 
 /**
  * Generated class for the SliderPage page.
@@ -20,6 +22,15 @@ export class SliderPage {
 
   ionViewDidLoad() {
     console.log('ionViewDidLoad SliderPage');
+  }
+
+  goToForm(){
+    if((this.navParams.get('title')) === 'faculty'){
+      this.navCtrl.push(FacultyFormPage);
+    }
+    else{
+      this.navCtrl.push(InstituteFirstFormPage);
+    }
   }
 
 }
