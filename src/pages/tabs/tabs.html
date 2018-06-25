@@ -1,0 +1,13 @@
+<ion-content padding>
+  <ion-tabs tabsPlacement="top" >
+    <ion-tab [root]="facultyPage" tabTitle="Faculty" tabsHideOnSubPages="true"></ion-tab>
+    <ion-tab [root]="institutePage" tabTitle="Institute"></ion-tab>
+  </ion-tabs>
+
+  <div class="btn2Class">
+      <button (click)="backToLogin()" style=" background-color: transparent;
+                                              font-weight: bold; color :#E60052;
+                                              font-size: 1.2em; 
+                                              font-family: Arial, Helvetica, sans-serif;">Back to login</button>
+  </div>
+</ion-content>

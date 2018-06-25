@@ -1,14 +1,19 @@
 page-slider {
     //next button is here
     .bottom{
-        background-color: #E60052;
+       // background-color: black;
         position:absolute;
         bottom:0;
-        right: 5%;
+        left: 5%;
     }
     //bullet color is here
     .swiper-pagination-bullet-active{
         background-color: #E60052 !important;
+    }
+
+    //pagination bottom width
+    .swiper-pagination-fraction, .swiper-pagination-custom, .swiper-container-horizontal > .swiper-pagination-bullets{
+        bottom: 0px;
     }
 
     //main content background
@@ -37,5 +42,11 @@ page-slider {
         background-image: url(../../assets/welcomeImage.jpg);
         background-repeat: no-repeat;
         background-size: cover;
+    }
+
+    //welcome div for text 
+    .welcomeTextDiv{
+        position: relative;
+        margin-top: 20%;
     }
 }

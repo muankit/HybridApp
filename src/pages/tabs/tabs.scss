@@ -1,0 +1,26 @@
+page-tabs {
+    //header background image
+    .tabbar::after{
+        background-image: none !important;
+    }
+    //tabs font
+    .tabs-md .tab-button-text{
+        font-size: 1.3em;
+        color: white;
+    }
+    //tabs background
+    .tabs-md .tabbar{
+        background: transparent;
+    }
+    //active tab color
+    .tabs-md .tab-button[aria-selected=true] {
+        background: #E60052; /* your background color*/
+    }
+    //btn2 class
+    .btn2Class{
+        position: absolute;
+        width: 100%;
+        text-align: center;
+        bottom: 6%;
+    }
+}

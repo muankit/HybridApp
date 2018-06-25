@@ -7,20 +7,22 @@ import { StatusBar } from '@ionic-native/status-bar';
 import { MyApp } from './app.component';
 import { HomePage } from '../pages/home/home';
 import { LoginPage } from '../pages/login/login';
-import { AskPage } from '../pages/ask/ask';
 import { SignUpFacultyPage } from '../pages/sign-up-faculty/sign-up-faculty';
 import { SignUpInstitutePage } from '../pages/sign-up-institute/sign-up-institute';
 import { SliderPage } from '../pages/slider/slider';
+import { TabsPage } from '../pages/tabs/tabs';
+import { FacultyFormPage } from '../pages/faculty-form/faculty-form';
 
 @NgModule({
   declarations: [
     MyApp,
     HomePage,
     LoginPage,
-    AskPage,
     SignUpFacultyPage,
     SignUpInstitutePage,
-    SliderPage
+    SliderPage,
+    TabsPage,
+    FacultyFormPage
   ],
   imports: [
     BrowserModule,
@@ -31,10 +33,11 @@ import { SliderPage } from '../pages/slider/slider';
     MyApp,
     HomePage,
     LoginPage,
-    AskPage,
     SignUpFacultyPage,
     SignUpInstitutePage,
-    SliderPage
+    SliderPage,
+    TabsPage,
+    FacultyFormPage
   ],
   providers: [
     StatusBar,

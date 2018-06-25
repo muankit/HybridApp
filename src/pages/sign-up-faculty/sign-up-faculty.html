@@ -11,32 +11,32 @@
 
 <!-- sigh up text -->
 <div>
-  <h1 class="signUpText" style="margin-top: 20%;">Sign up</h1>
+  <h1 class="signUpText" style="margin-top: 10%;">Sign up</h1>
 </div>
 
 <!-- form div -->
   <div class="formDiv">
     <ion-list class="formList">
       <ion-item>
-          <ion-input placeholder="FIRST NAME"></ion-input>
+          <ion-input placeholder="First Name"></ion-input>
         </ion-item>
         <ion-item>
-          <ion-input placeholder="LAST NAME"></ion-input>
+          <ion-input placeholder="Last Name"></ion-input>
     
         </ion-item>
         <ion-item>
-          <ion-input placeholder="EMAIL"></ion-input>
+          <ion-input placeholder="Email"></ion-input>
         </ion-item>
         <ion-item>
-          <ion-input placeholder="PHONE"></ion-input>
+          <ion-input placeholder="Phone"></ion-input>
       </ion-item>
     </ion-list>
 
-    <button ion-button class="nextBtn"
-            style="padding: 0px 50px 0px 50px; 
-                    background-color: #E60052; 
-                    border-radius: 25px; font-size: 1.3em; 
-                    font-family: sans-serif">NEXT</button>
+    <button ion-button (click)="goToFacultyForm()" class="nextBtn"
+                        style="padding: 0px 50px 0px 50px; 
+                                background-color: #E60052; 
+                                border-radius: 5px; font-size: 1.3em; 
+                                font-family: sans-serif">NEXT</button>
 
   </div>
   
