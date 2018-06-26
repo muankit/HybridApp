@@ -56,14 +56,11 @@
 <hr>
 <!-- qualification div is here -->
   <div>
-    <ion-label >Qualification</ion-label>
+    <ion-label class="labelClass">Qualification</ion-label>
     <ion-card>
-      <ion-card-header>Highest
-        <!-- <button ion-button> -->
-          <ion-icon name="jobguru-customAddIcon"></ion-icon>
-        <!-- </button> -->
+      <ion-card-header (click)="QualtoggleAccordion()">Highest
       </ion-card-header>
-      <ion-card-content>
+      <ion-card-content #qualCardCon>
         <ion-input placeholder="Degree"></ion-input>
         <ion-input placeholder="Year Of Completion"></ion-input>
       </ion-card-content>
@@ -73,12 +70,11 @@
 <hr>
 <!-- exp is here -->
   <div>
-    <ion-label >Experience</ion-label>
+    <ion-label class="labelClass">Experience</ion-label>
     <ion-card>
-      <ion-card-header>School
-        <button ion-button>[add icon]</button>
+      <ion-card-header (click)="ExpSchtoggleAccordion()">School
       </ion-card-header>
-      <ion-card-content>
+      <ion-card-content #expCardCon>
         <ion-input placeholder="School Name"></ion-input>
         <ion-grid>
           <ion-row>
@@ -95,12 +91,12 @@
         <ion-input placeholder="City"></ion-input>
       </ion-card-content>
     </ion-card>
+
     <ion-card>
-        <ion-card-header>Institute
-          <button ion-button>add</button>
+        <ion-card-header (click)="ExpInstoggleAccordion()">Institute
         </ion-card-header>
-        <ion-card-content>
-            <ion-input placeholder="School Name"></ion-input>
+        <ion-card-content #expInsCardCon>
+            <ion-input placeholder="Institute Name"></ion-input>
             <ion-grid>
                 <ion-row>
                   <ion-col>
