@@ -9,7 +9,7 @@ page-faculty-form {
 
     }
     .imgSpan {
-        background-image: url(../../assets/imgs/addImage.png);
+        background-image: url(../assets/imgs/addImage.png);
         background-repeat: no-repeat;
         background-size: auto;
         text-align:center;
@@ -44,4 +44,59 @@ page-faculty-form {
     .addText{
         font-size: 1.2em;
     }
+
+    //gender is here
+    .appForm{
+        margin: 20px;
+    }
+    .female{
+        background-image: url(../assets/imgs/female-50.png);
+        background-repeat: no-repeat;
+        background-size: contain;
+    }
+    .male{
+        background-image: url(../assets/imgs/male-50.png);
+        background-repeat: no-repeat;
+        background-size: contain;
+    }
+    .radio-md .radio-icon{
+        border-color: #c0c0c0;   
+    }
+    .radio-md .radio-checked{
+        border-color: #c0c0c0;
+    }
+    .item-md.item-block .item-inner{
+        padding-right: 50%;
+    }
+    .radio-md .radio-inner{
+        background-color: #E60052;
+    }
+    .item-md.item-block .item-inner{
+        border-bottom: none;
+    }
+    //gender ends here
+    //next btn
+    .nextBtnClass{
+        position: relative;
+        text-align: center;
+    }
+
+    //custom icon of ADD is here
+    ion-icon {
+        &[class*="jobguru-"] {
+            // Instead of using the font-based icons
+            // We're applying SVG masks
+            mask-size: contain;
+            mask-position: 50% 50%;
+            mask-repeat: no-repeat;
+            background:transparent;
+            width: 1em;
+            height: 1em;
+        }
+        // custom icons
+        &[class*="appname-customAddIcon"] {
+            mask-image: url(../../assets/imgs/Add.svg);
+        }
+    }
+    //ends here
 }

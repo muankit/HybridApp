@@ -1,5 +1,5 @@
 <!-- No header -->
-
+<!-- new user header -->
 <ion-content padding>
   <h1 style=" font-size: 2.0em;
               font-family:sans-serif;
@@ -8,6 +8,7 @@
               width: 100%;
               text-align: center;">NEW USER</h1>
 
+<!-- add image option -->
   <ion-grid style="position: relative; margin-top: 10%;">
     <ion-row>
       <ion-col class="imgCol" width-20>
@@ -24,4 +25,107 @@
     </ion-row>
   </ion-grid>
 
-</ion-content>
+  <!-- gender is here -->
+  <div class="appForm">
+    <ion-list radio-group>
+      <ion-row>
+        <ion-col >
+            <ion-item class="male">
+              <ion-radio value="male"></ion-radio>
+            </ion-item>
+        </ion-col>
+        <ion-col>
+            <ion-item class="female">
+              <ion-radio value="femmale"></ion-radio>
+            </ion-item>
+        </ion-col>
+      </ion-row>
+    </ion-list>        
+  </div>
+
+  <!-- DOB Div is here<<<<<<<<<<<< !Cancelled! >>>>>>>>>>>-->
+  <!-- <div>
+      <ion-item>
+          <ion-label stacked>Date</ion-label>
+          <ion-datetime placeholder="dd/mm/yyyy" displayFormat="DD/MM/YYYY" [(ngModel)]="myDate" class="calenderImg">
+        </ion-datetime>
+      </ion-item>
+  </div> -->
+<!-- ends here-->
+
+<hr>
+<!-- qualification div is here -->
+  <div>
+    <ion-label >Qualification</ion-label>
+    <ion-card>
+      <ion-card-header>Highest
+        <!-- <button ion-button> -->
+          <ion-icon name="jobguru-customAddIcon"></ion-icon>
+        <!-- </button> -->
+      </ion-card-header>
+      <ion-card-content>
+        <ion-input placeholder="Degree"></ion-input>
+        <ion-input placeholder="Year Of Completion"></ion-input>
+      </ion-card-content>
+    </ion-card>
+  </div>
+<!-- qual ends here -->
+<hr>
+<!-- exp is here -->
+  <div>
+    <ion-label >Experience</ion-label>
+    <ion-card>
+      <ion-card-header>School
+        <button ion-button>[add icon]</button>
+      </ion-card-header>
+      <ion-card-content>
+        <ion-input placeholder="School Name"></ion-input>
+        <ion-grid>
+          <ion-row>
+            <ion-col>
+                <ion-datetime placeholder="Start Date" displayFormat="MM/YYYY"></ion-datetime>
+            </ion-col>
+            <ion-col>
+                <ion-datetime placeholder="End Date" displayFormat="MM/YYYY"></ion-datetime>
+            </ion-col>
+          </ion-row>
+        </ion-grid>
+        <ion-input placeholder="Exam"></ion-input>
+        <ion-input placeholder="Subject"></ion-input>
+        <ion-input placeholder="City"></ion-input>
+      </ion-card-content>
+    </ion-card>
+    <ion-card>
+        <ion-card-header>Institute
+          <button ion-button>add</button>
+        </ion-card-header>
+        <ion-card-content>
+            <ion-input placeholder="School Name"></ion-input>
+            <ion-grid>
+                <ion-row>
+                  <ion-col>
+                      <ion-datetime placeholder="Start Date" displayFormat="MM/YYYY"></ion-datetime>
+                  </ion-col>
+                  <ion-col>
+                      <ion-datetime placeholder="End Date" displayFormat="MM/YYYY"></ion-datetime>
+                  </ion-col>
+                </ion-row>
+              </ion-grid>            <ion-input placeholder="Exam"></ion-input>
+            <ion-input placeholder="Subject"></ion-input>
+            <ion-input placeholder="City"></ion-input>
+        </ion-card-content>
+      </ion-card>
+  </div>
+<!-- exp ends here -->
+
+<!-- terms and conitions is here -->
+<ion-item>
+  <ion-label>I ACCEPT THE <a href="www.google.com">TERMS AND CONDITIONS</a></ion-label>
+  <ion-checkbox color="#E60052" checked="true"></ion-checkbox>
+</ion-item>
+
+<!-- t&c ends here -->
+<!-- next btn is here -->
+<div class="nextBtnClass">
+  <button ion-button style="background-color: #E60052; padding: 0px 50px 0px 50px; border-radius: 5px; font-size: 1.3em; font-family: sans-serif">NEXT</button>
+</div>
