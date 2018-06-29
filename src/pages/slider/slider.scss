@@ -49,4 +49,51 @@ page-slider {
         position: relative;
         margin-top: 20%;
     }
+    // back to login btn
+    .backBtn{
+        background-color: transparent;
+        color: #E60052;
+        font-size: 1.3em;
+    }
+    .backBtndiv{
+        position: relative;
+        float: left;
+        margin: 20px 0px 0px 0px;
+        text-align: center;
+        width: 100%;
+    }
+    .footer-md::before{
+        background-image: none !important;
+    }
+    .button-md{
+        webkit-box-shadow: none;
+        box-shadow: none;
+    }
+    //ends here
+
+
+    //left arrow defined here
+    .leftArrowDiv{
+        position: relative;
+        float: left;
+        text-align: center;
+        margin: 20px 0px 0px 20px;
+    }
+    .leftArrow{
+        padding-left: 10px;
+    }
+    .button-md{
+        background-color: transparent;
+        color: #E60052;
+    }
+    //right arrow is here
+    .rightArrow{
+        padding-left: 35px;
+    }
+    .rightArrowDiv{
+        position: relative;
+        float: left;
+        text-align: center;
+        margin: 20px 0px 0px 20px;
+    }
 }

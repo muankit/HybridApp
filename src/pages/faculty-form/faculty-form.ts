@@ -1,5 +1,6 @@
 import { Component ,ViewChild, OnInit, Renderer, Input} from '@angular/core';
-import { IonicPage, NavController, NavParams, CardContent } from 'ionic-angular';
+import { IonicPage, NavController, NavParams, CardContent, AlertController } from 'ionic-angular';
+import { HomePage } from '../home/home';
 
 @IonicPage()
 @Component({
@@ -13,7 +14,7 @@ export class FacultyFormPage implements OnInit{
   @ViewChild("expCardCon") expSchCardContent : any;
   @ViewChild("expInsCardCon") expInsCardContent : any;
 
-  constructor(public navCtrl: NavController, public navParams: NavParams ,public renderer : Renderer) {
+  constructor(public navCtrl: NavController, public navParams: NavParams ,public renderer : Renderer , public alertCtrl : AlertController) {
   }
 
   ionViewDidLoad() {
@@ -72,6 +73,21 @@ export class FacultyFormPage implements OnInit{
     this.accordionExapanded = !this.accordionExapanded;
   }
 
-
-
+  nextBtnClick(){
+    this.navCtrl.push(HomePage);
+  }
+  addImg(){
+    const alert = this.alertCtrl.create({
+        title : "Gallery Intent",
+        buttons : [
+          {
+            text: 'Add Image'
+          }
+        ]
+         
+      });
+      alert.present();
+    }
 }
+
+

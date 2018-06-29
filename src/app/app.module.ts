@@ -7,43 +7,44 @@ import { StatusBar } from '@ionic-native/status-bar';
 import { MyApp } from './app.component';
 import { HomePage } from '../pages/home/home';
 import { LoginPage } from '../pages/login/login';
-import { SignUpFacultyPage } from '../pages/sign-up-faculty/sign-up-faculty';
-import { SignUpInstitutePage } from '../pages/sign-up-institute/sign-up-institute';
 import { SliderPage } from '../pages/slider/slider';
 import { TabsPage } from '../pages/tabs/tabs';
 import { FacultyFormPage } from '../pages/faculty-form/faculty-form';
 import { InstituteFirstFormPage } from '../pages/institute-first-form/institute-first-form';
 import { InstituteSecondFormPage } from '../pages/institute-second-form/institute-second-form';
+import { EntrySlidesPage } from '../pages/entry-slides/entry-slides';
 
 @NgModule({
   declarations: [
     MyApp,
     HomePage,
     LoginPage,
-    SignUpFacultyPage,
-    SignUpInstitutePage,
     SliderPage,
     TabsPage,
     FacultyFormPage,
     InstituteFirstFormPage,
-    InstituteSecondFormPage
+    InstituteSecondFormPage,
+    EntrySlidesPage
   ],
   imports: [
     BrowserModule,
-    IonicModule.forRoot(MyApp)
+    IonicModule.forRoot(MyApp , {
+        scrollPadding: false,
+        scrollAssist: true,
+        autoFocusAssist: false
+    })
   ],
   bootstrap: [IonicApp],
   entryComponents: [
     MyApp,
     HomePage,
     LoginPage,
-    SignUpFacultyPage,
-    SignUpInstitutePage,
     SliderPage,
     TabsPage,
     FacultyFormPage,
     InstituteFirstFormPage,
-    InstituteSecondFormPage
+    InstituteSecondFormPage,
+    EntrySlidesPage
   ],
   providers: [
     StatusBar,

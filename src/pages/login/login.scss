@@ -14,6 +14,8 @@ page-login {
         background-repeat: no-repeat center  center fixed;
         background-size: cover;
         border-radius: 50%;
+        width: 150px;
+        height: 150px;
     }
     .imgSpan {
         text-align:center;
@@ -35,7 +37,14 @@ page-login {
     }
     
     //ends here
-
+     //last input line comes solution is here
+     .list-md .item-input:last-child{
+        border-bottom: none;
+    }
+    .list-md > .item-block:last-child .item-inner{
+        border-bottom: 1px solid #dedede;
+    }
+    //solution ends here
     //login input is here
     
     .loginText{
@@ -79,4 +88,88 @@ page-login {
         margin-top: 10%;
     }
     //end here
+
+    .item-md.item-input.item-input-has-focus .item-inner,
+        .item-md.item-input.input-has-focus .item-inner {
+            border-bottom-color: #dedede;
+            -webkit-box-shadow: none; 
+            box-shadow: none;
+    }
+    .list-md .item-input.item-input-has-focus:last-child, .list-md .item-input.input-has-focus:last-child {
+        border-bottom-color:#dedede;
+        -webkit-box-shadow: none;
+        box-shadow: none;
+    }    
+
+    //Media Query
+    @media (min-width: 320px ) and (max-width: 479px) {
+        .loginText{
+            position: relative;
+            margin-top: 10%;
+        }
+        .btnClass{
+            position: relative;
+            width: 100%;
+            text-align: center;
+            margin-top: 8%;
+        }
+        .btn2Class{
+            position: relative;
+            width: 100%;
+            text-align: center;
+            margin-top: 8%;
+        }
+        .inputClass{
+            position: relative;
+            width: 100%;
+           // left: 15%;
+            //top: 8%;
+            padding: 0px 20px 0px 20px;
+        }
+        .item-md{
+            padding: 8px 0px;
+        }
+        .text-input-md{
+            margin: 0px 0px 0px 20px;
+        }
+        .img-circle {
+            position: relative;
+            background-image: url(../assets/loginImage.jpg);
+            background-repeat: no-repeat center  center fixed;
+            background-size: cover;
+            border-radius: 50%;
+            width: 120px;
+            height: 120px;
+        }
+        .imgSpan {
+            text-align:center;
+            width:100%;
+            background:white;
+            bottom:0;
+            padding:20px 0;
+            opacity:0.5;
+        }
+        .imgCol{
+            position: relative;
+            margin-top: 10%;
+        }
+        .img-thumbnail {
+            display:inline-block;
+            overflow: hidden;
+            height: 120px;
+            border: 1px solid #000;
+        } 
+        .background{
+            background-image: url(../assets/loginBack320x479.jpg);
+            background-repeat: no-repeat center center fixed;
+            background-size: cover;
+        } 
+        //inout back ground box sol
+        .item-md.item-input.item-input-has-focus .item-inner,
+        .item-md.item-input.input-has-focus .item-inner {
+            border-bottom-color: none;
+            -webkit-box-shadow: none; 
+            box-shadow: none;
+        }  
+    }
 }

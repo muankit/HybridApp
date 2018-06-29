@@ -11,14 +11,17 @@
 <!-- add image option -->
   <ion-grid style="position: relative; margin-top: 10%;">
     <ion-row>
-      <ion-col class="imgCol" width-20>
-        <div class="img-thumbnail img-circle">
-          <div style="position: relative; padding: 0; cursor: pointer;" type="file">
-            <img class="img-circle" style="width: 50px; height: 50px;" >
-            <span style="position: absolute;" class="imgSpan"></span>
-          </div>
-        </div>  
-      </ion-col>
+      <button class="addImgBtn" (click)="addImg()">
+        <ion-col class="imgCol" width-20>
+            <div class="img-thumbnail img-circle">
+              <div style="position: relative; padding: 0; cursor: pointer;" type="file">
+                <img class="img-circle" style="width: 50px; height: 50px;" >
+                <span style="position: absolute;" class="imgSpan"></span>
+              </div>
+            </div>  
+        </ion-col>
+      </button>
+      
       <ion-col class="textCol"> 
         <p class="addText">ADD AN IMAGE</p> 
       </ion-col>
@@ -123,5 +126,5 @@
 <!-- t&c ends here -->
 <!-- next btn is here -->
 <div class="nextBtnClass">
-  <button ion-button style="background-color: #E60052; padding: 0px 50px 0px 50px; border-radius: 5px; font-size: 1.3em; font-family: sans-serif">NEXT</button>
+  <button ion-button (click)="nextBtnClick()" style="background-color: #E60052; padding: 0px 50px 0px 50px; border-radius: 5px; font-size: 1.3em; font-family: sans-serif">NEXT</button>
 </div>

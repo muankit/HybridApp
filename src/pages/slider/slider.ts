@@ -1,14 +1,8 @@
-import { Component } from '@angular/core';
-import { IonicPage, NavController, NavParams } from 'ionic-angular';
+import { Component , ViewChild } from '@angular/core';
+import { IonicPage, NavController, NavParams , Slides } from 'ionic-angular';
 import { FacultyFormPage } from '../faculty-form/faculty-form';
 import { InstituteFirstFormPage } from '../institute-first-form/institute-first-form';
 
-/**
- * Generated class for the SliderPage page.
- *
- * See https://ionicframework.com/docs/components/#navigation for more info on
- * Ionic pages and navigation.
- */
 
 @IonicPage()
 @Component({
@@ -17,6 +11,8 @@ import { InstituteFirstFormPage } from '../institute-first-form/institute-first-
 })
 export class SliderPage {
 
+  @ViewChild('slides') slides: Slides;  
+
   constructor(public navCtrl: NavController, public navParams: NavParams) {
   }
 
@@ -24,7 +20,17 @@ export class SliderPage {
     console.log('ionViewDidLoad SliderPage');
   }
 
-  goToForm(){
+  //this is next btn for form
+  gotoForm(){
+    if((this.navParams.get('title')) === 'faculty'){
+      this.navCtrl.push(FacultyFormPage);
+    }
+    else{
+      this.navCtrl.push(InstituteFirstFormPage);
+    }
+  }
+  //this is skip btn for form
+  skipBtn(){
     if((this.navParams.get('title')) === 'faculty'){
       this.navCtrl.push(FacultyFormPage);
     }
@@ -33,4 +39,12 @@ export class SliderPage {
     }
   }
 
+  //arrow function defined here
+  goLeft(){
+    this.slides.slidePrev();
+  }
+
+  goRight(){
+    this.slides.slideNext();
+  }
 }

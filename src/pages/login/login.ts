@@ -1,7 +1,8 @@
 import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams, AlertController } from 'ionic-angular';
-import { TabsPage } from '../tabs/tabs';
 import { HomePage } from '../home/home';
+import { EntrySlidesPage } from '../entry-slides/entry-slides';
+//import { Keyboard } from '@ionic-native/keyboard';
 
 
 @IonicPage()
@@ -12,6 +13,7 @@ import { HomePage } from '../home/home';
 export class LoginPage {
 
   constructor(public navCtrl: NavController, public navParams: NavParams , public alertCtrl : AlertController) {
+  //  keyboard.disableScroll(true);
   }
 
   ionViewDidLoad() {
@@ -48,6 +50,6 @@ export class LoginPage {
   }
 
   newUserClick(){
-    this.navCtrl.push(TabsPage);
+    this.navCtrl.push(EntrySlidesPage);
   }
 }

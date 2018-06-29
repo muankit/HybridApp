@@ -1,0 +1,78 @@
+<ion-header>
+  <div class="outerDiv">
+    <div class="mainDiv">
+        <button ion-button full (click)="facultyClick(0)" class="facultyBtnClass" [class.someClass]="addClass"  >Faculty</button>
+    </div>
+    <div class="innerDiv">
+        <button ion-button full (click)="instituteClick(1)" class="insBtnClass" [class.some2Class]="add2Class">Institute</button>
+    </div>
+  </div>
+ 
+</ion-header>
+
+<ion-content padding class="mainBackground">
+  <div>
+    <p class="signUpText">Sign up</p>
+    <ion-slides #slides (ionSlideDidChange)="slideChanged()">
+      <ion-slide>
+        <!-- first Slide -->
+        <div class="formDiv">
+          <ion-list class="formList">
+            <ion-item>
+                <ion-input placeholder="First Name"></ion-input>
+              </ion-item>
+              <ion-item>
+                <ion-input placeholder="Last Name"></ion-input>
+              </ion-item>
+              <ion-item>
+                <ion-input placeholder="Email"></ion-input>
+              </ion-item>
+              <ion-item>
+                <ion-input placeholder="Phone"></ion-input>
+            </ion-item>
+          </ion-list>
+
+          <button ion-button (click)="goToFacultySlider()" class="nextBtn"
+                              style="padding: 0px 50px 0px 50px; 
+                                      background-color: #E60052; 
+                                      border-radius: 5px; font-size: 1.3em; 
+                                      font-family: sans-serif;
+                                      box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.10);">NEXT
+          </button>
+        </div>
+      </ion-slide>
+      <!-- Institute Slide-->
+      <ion-slide> 
+        <div class="formDiv">
+          <ion-list class="formList">
+            <ion-item>
+                <ion-input placeholder="Institute Name"></ion-input>
+              </ion-item>
+              <ion-item>
+                <ion-input placeholder="Director Name"></ion-input>
+              </ion-item>
+              <ion-item>
+                <ion-input placeholder="Email"></ion-input>
+              </ion-item>
+              <ion-item>
+                <ion-input placeholder="Phone"></ion-input>
+            </ion-item>
+          </ion-list>
+      
+          <button ion-button class="nextBtn" (click)="goToInstituteSlider()"
+                  style="padding: 0px 50px 0px 50px; 
+                          background-color: #E60052; 
+                          border-radius: 5px; font-size: 1.3em; 
+                          font-family: sans-serif;
+                          box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.10);">NEXT
+          </button>
+        </div>
+      </ion-slide>
+    </ion-slides>
+  </div>
+  <div class="backBtndiv">
+      <button ion-button class="backBtn" (click)="backToLogin()">
+        <ion-icon name="ios-arrow-back" class="backClass"></ion-icon>Back to login</button>
+    </div>
+</ion-content>
+

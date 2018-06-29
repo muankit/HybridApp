@@ -6,7 +6,9 @@ page-faculty-form {
         //bottom: 8px;
         background:#9b9999;
         border-radius: 50%;
-
+    }
+    .addImgBtn{
+        background-color: transparent;
     }
     .imgSpan {
         background-image: url(../assets/imgs/addImage.png);
@@ -47,7 +49,7 @@ page-faculty-form {
 
     //gender is here
     .appForm{
-        margin: 20px;
+        margin: 10px;
     }
     .female{
         background-image: url(../assets/imgs/female-50.png);
@@ -66,7 +68,7 @@ page-faculty-form {
         border-color: #c0c0c0;
     }
     .item-md.item-block .item-inner{
-        padding-right: 50%;
+        padding-right: 100%;
     }
     .radio-md .radio-inner{
         background-color: #E60052;

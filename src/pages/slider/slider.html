@@ -14,12 +14,35 @@
       <ion-slide>
             <h1>This is third Slide</h1>
             <p>Multiply unto unto day under. Fill he two void which made. Saying no more</p>
-            <button ion-button (click)="goToForm()">Next</button>
+            <button ion-button (click)="gotoForm()" >NEXT</button>
       </ion-slide>
     </ion-slides>
   </div>
-
   <!-- <img src="../assets/imgs/Right.png" class="bottom" style="width : 8% ; height : 5%" ng-click="nextpage()"> -->
-
   </ion-content>
-    
+  <ion-footer>
+
+    <ion-grid>
+      <ion-row>
+        <ion-col>
+          <div class="leftArrowDiv">
+            <button ion-button class="leftArrow" class="swiper-button-prev" (click)="goLeft()">
+              <ion-icon name="ios-arrow-back-outline"></ion-icon>
+            </button>
+          </div>
+        </ion-col>
+        <ion-col>
+          <div class="backBtndiv">
+            <button ion-button class="backBtn" (click)="skipBtn()">SKIP</button>
+          </div>
+        </ion-col>
+        <ion-col>
+          <div class="rightArrowDiv">
+            <button ion-button class="rightArrow" class="swiper-button-next" (click)="goRight()">
+              <ion-icon name="ios-arrow-forward-outline"></ion-icon>
+            </button>
+          </div>
+        </ion-col>
+      </ion-row>
+    </ion-grid>  
+  </ion-footer>
