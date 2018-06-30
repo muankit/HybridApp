@@ -14,6 +14,7 @@ import { InstituteFirstFormPage } from '../pages/institute-first-form/institute-
 import { InstituteSecondFormPage } from '../pages/institute-second-form/institute-second-form';
 import { EntrySlidesPage } from '../pages/entry-slides/entry-slides';
 
+
 @NgModule({
   declarations: [
     MyApp,

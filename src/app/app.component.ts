@@ -1,17 +1,22 @@
-import { Component } from '@angular/core';
-import { Platform , App, Slide } from 'ionic-angular';
+import { Component , ViewChild} from '@angular/core';
+import { Platform , App, Slide , NavController, MenuController} from 'ionic-angular';
 import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
 
-import { LoginPage } from '../pages/login/login';
-import { SliderPage } from '../pages/slider/slider';
+import { HomePage } from '../pages/home/home';
+import { EntrySlidesPage } from '../pages/entry-slides/entry-slides';
+
 @Component({
   templateUrl: 'app.html'
 })
-export class MyApp {
-  rootPage:any = SliderPage;
 
-  constructor(platform: Platform, statusBar: StatusBar, splashScreen: SplashScreen) {
+export class MyApp {
+
+  homePage = EntrySlidesPage;
+
+  @ViewChild('nav') nav : NavController;
+
+  constructor(platform: Platform, statusBar: StatusBar, splashScreen: SplashScreen , public menuCtrl : MenuController) {
     platform.ready().then(() => {
       // Okay, so the platform is ready and our plugins are available.
       // Here you can do any higher level native things you might need.
@@ -19,5 +24,9 @@ export class MyApp {
       splashScreen.hide();
     });
   }
+  onLoad(page : any){
+    this.nav.setRoot(page);
+    this.menuCtrl.close();  
+  }  
 }
 

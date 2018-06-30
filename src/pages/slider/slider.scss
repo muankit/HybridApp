@@ -18,7 +18,7 @@ page-slider {
 
     //main content background
     .mainBackground{
-        background-image: url(../../assets/signUpBackground.jpg);
+        background-image: url(../assets/signUpBackground.jpg);
         background-repeat: no-repeat center center fixed;
         background-size: cover;
     }
@@ -39,7 +39,7 @@ page-slider {
     }
     //welocme div for image
     .welcomeDiv{
-        background-image: url(../../assets/welcomeImage.jpg);
+        background-image: url(../assets/welcomeImage.jpg);
         background-repeat: no-repeat;
         background-size: cover;
     }
@@ -73,6 +73,11 @@ page-slider {
 
 
     //left arrow defined here
+    //btn activated color
+    .button-md.activated{
+        background-color: transparent;
+        box-shadow: none;
+    }
     .leftArrowDiv{
         position: relative;
         float: left;

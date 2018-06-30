@@ -1,18 +1,54 @@
+<link href="https://fonts.googleapis.com/css?family=Oxygen|Ubuntu" rel="stylesheet">
+
 <ion-header>
   <ion-navbar>
-    <ion-title>
-      JobGuru
-    </ion-title>
+    
+<ion-grid>
+  <ion-row>
+    <ion-col col-4>
+      <button ion-button icon-only menuToggle class="menuBtn">
+          <ion-icon name="menu"></ion-icon>
+      </button>
+    </ion-col>
+
+    <ion-col col-4>
+      <ion-title style="font-family: 'Oxygen', sans-serif;">
+          JOBGURU
+      </ion-title>
+    </ion-col>
+
+    <ion-col col-4 class="circleClass">
+          <!-- Circle is here -->
+      <div class="imgCol" style="text-align: center;"> 
+        <div class="img-thumbnail img-circle">
+            <div style="position: relative; padding: 0; cursor: pointer;" type="file">
+              <img class="img-circle">
+            </div>
+        </div>   
+      </div>
+    </ion-col>
+
+  </ion-row>
+</ion-grid>    
+
   </ion-navbar>
 </ion-header>
 
 <ion-content padding>
-  <ion-card>
+    <ion-searchbar
+    [(ngModel)]="myInput"
+    [showCancelButton]="shouldShowCancel"
+    (ionInput)="onInput($event)"
+    (ionCancel)="onCancel($event)"
+    placeholder="Try search...">
+  </ion-searchbar>
+  <!-- <ion-card>
     <ion-card-header>
       jobs
     </ion-card-header>
     <ion-card-content>
       <p>JObs details</p>
     </ion-card-content>
-  </ion-card>
+  </ion-card> -->
+
 </ion-content>

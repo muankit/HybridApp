@@ -1,3 +1,105 @@
 page-home {
+    //toolbar bacground and image is here
+    .toolbar-background-md{
+        background-color:transparent;
+    }
+    ion-header.header.header-md::after {
+        background-image: none !important;
+        height: 0px !important;
+    }
+    .toolbar-md {
+        padding: 0px;
+    }
+    //ends here
+   // css for header::after
+    .header-md::after,
+    .tabs-md[tabsPlacement="top"] > .tabbar::after,
+    .footer-md::before, .tabs-md[tabsPlacement="bottom"] > .tabbar::before {
+        height: 0px !important; 
+    }
+  // end css header::after
+    //menu btn
+    .menuBtn{
+        position: relative;
+        float: left;
+    }
+    //drawer opener is here
+    .bar-button-default-md{
+        color: #E60052;
+    }
+
+    //header title
+    .toolbar-title-md{
+        margin-top: 3%;
+        padding: 0px;
+        position: relative;
+        float: left;
+        text-align: center;
+        color: #E60052;
+    }
+    //circle is here
+    .img-circle {
+        position: relative;
+        border-radius: 50%;
+        width: 30px;
+        height: 30px;
+        background-image: url(../assets/homeLogo.jpg);
+        background-repeat: no-repeat center  center fixed;
+        background-size: cover;
+    }
+    
+    // .imgSpan {
+    //     text-align:center;
+    //     width:100%;
+    //     background:white;
+    //     bottom:0;
+    //     padding:20px 0;
+    //     opacity:0.5;
+    // }
+    // .imgCol{
+    //     position: relative;
+    //     margin-top: 19%;
+    // }
+    .img-thumbnail {
+        display:inline-block;
+        overflow: hidden;
+        height: 30px;
+        border: 1px solid #000;
+    }
+    .circleClass{
+        position: relative;
+        float: left;
+        text-align: center;
+        padding-left: 10%;
+        padding-top: 2%;
+    }  
+    
+    // circle ends here
+    
+
+    //serach bar is here
+    .searchbar-md{
+        padding: 0px;
+    }
+    .searchbar-md .searchbar-search-icon{
+        right: 16px;
+        left: none;
+    }
+    .searchbar-md .searchbar-input{
+        border-radius: 7px;
+        font-size: 1em;
+        box-shadow: 0 8px 22px 0 rgba(239, 239, 239, 1.0), 0 8px 17px 0 rgba(239, 239, 239, 1.0);
+
+        //5 18  4 12
+        //8 22 8 17
+        //4 13 4 10
+    }
+    //height from top has padding in scroll content
+    /*ion-app.md [padding] .scroll-content{
+        padding: 10px 16px !important;
+    }*/
+    ion-content .scroll-content {
+        padding: 8px 16px !important;
+    }
 
 }
