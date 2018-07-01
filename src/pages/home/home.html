@@ -1,4 +1,5 @@
 <link href="https://fonts.googleapis.com/css?family=Oxygen|Ubuntu" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Muli" rel="stylesheet">
 
 <ion-header>
   <ion-navbar>
@@ -50,5 +51,325 @@
       <p>JObs details</p>
     </ion-card-content>
   </ion-card> -->
+
+  <ion-grid>
+    <ion-row>
+      <ion-col>
+        <h5>Recommended</h5>
+      </ion-col>
+
+      <ion-col class="arrowClass">
+        <ion-icon name="ios-arrow-forward-outline"></ion-icon>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+
+  <ion-scroll scrollX="true" class="scrollHorizontal">
+    <ion-img src="../assets/horiRect.png" width="100px" height="100px"></ion-img>
+    <ion-img src="../assets/horiRect.png" width="100px" height="100px"></ion-img>
+    <ion-img src="../assets/horiRect.png" width="100px" height="100px"></ion-img>
+    <ion-img src="../assets/horiRect.png" width="100px" height="100px"></ion-img>
+    <ion-img src="../assets/horiRect.png" width="100px" height="100px"></ion-img>
+    <ion-img src="../assets/horiRect.png" width="100px" height="100px"></ion-img>
+    <ion-img src="../assets/horiRect.png" width="100px" height="100px"></ion-img>
+    <ion-img src="../assets/horiRect.png" width="100px" height="100px"></ion-img>
+    <ion-img src="../assets/horiRect.png" width="100px" height="100px"></ion-img>
+    <ion-img src="../assets/horiRect.png" width="100px" height="100px"></ion-img>
+    <ion-img src="../assets/horiRect.png" width="100px" height="100px"></ion-img>
+    <ion-img src="../assets/horiRect.png" width="100px" height="100px"></ion-img>
+    <ion-img src="../assets/horiRect.png" width="100px" height="100px"></ion-img>
+    <ion-img src="../assets/horiRect.png" width="100px" height="100px"></ion-img>
+    <ion-img src="../assets/horiRect.png" width="100px" height="100px"></ion-img>
+    <ion-img src="../assets/horiRect.png" width="100px" height="100px"></ion-img>
+    <ion-img src="../assets/horiRect.png" width="100px" height="100px"></ion-img>
+    <ion-img src="../assets/horiRect.png" width="100px" height="100px"></ion-img>
+    <ion-img src="../assets/horiRect.png" width="100px" height="100px"></ion-img>
+    <ion-img src="../assets/horiRect.png" width="100px" height="100px"></ion-img>
+    <ion-img src="../assets/horiRect.png" width="100px" height="100px"></ion-img>
+    <ion-img src="../assets/horiRect.png" width="100px" height="100px"></ion-img>
+    <ion-img src="../assets/horiRect.png" width="100px" height="100px"></ion-img>
+    
+  </ion-scroll>
+
+  <hr style="margin-top: 5%;">
+
+          <!-- first card here -->
+
+  <ion-list>
+    <ion-item-sliding #item>     
+      <ion-item>
+      <ion-card>
+        <ion-grid>
+          <ion-row>
+            <!-- circle column is here -->
+            <ion-col col-3>
+              <div class="imgColDiv" style="text-align: center;"> 
+                <div class="img-thumbnailDiv img-circleDiv">
+                  <div style="position: relative; padding: 0; cursor: pointer;" type="file">
+                    <img class="img-circleDiv">
+                  </div>
+                </div>   
+              </div>
+            </ion-col>
+            <!-- circle column ends here -->
+      
+            <ion-col col-7>
+              <h4>Ankit Pareek</h4>
+              <p>Developer</p>
+              <p>Exp 6 months</p>
+            </ion-col>
+            
+            <ion-col col-2>
+              
+            </ion-col>
+      
+          </ion-row>
+        </ion-grid>
+      </ion-card>
+    </ion-item>
+      <ion-item-options side="left">
+        <button ion-button (click)="favorite(item)">Favorite</button>
+        <button ion-button color="danger" (click)="share(item)">Share</button>
+      </ion-item-options>
+  
+      <ion-item-options side="right">
+        <button ion-button>Apply</button>
+      </ion-item-options>
+    </ion-item-sliding>
+</ion-list>
+
+<hr>
+
+
+
+<!-- Second card here -->
+
+<ion-list>
+    <ion-item-sliding #item>
+      <ion-item>
+        <ion-card>
+          <ion-grid>
+            <ion-row>
+              <!-- circle column is here -->
+              <ion-col col-3>
+                <div class="imgColDiv" style="text-align: center;"> 
+                  <div class="img-thumbnailDiv img-circleDiv">
+                    <div style="position: relative; padding: 0; cursor: pointer;" type="file">
+                      <img class="img-circleDiv1">
+                    </div>
+                  </div>   
+                </div>
+              </ion-col>
+              <!-- circle column ends here -->
+      
+              <ion-col col-7>
+                <h4>Ashish Pareek</h4>
+                <p>Marketing Managaer</p>
+                <p>Exp 6 yrs</p>
+              </ion-col>
+              
+              <ion-col col-2>
+                
+              </ion-col>
+      
+            </ion-row>
+          </ion-grid>
+        </ion-card>
+      </ion-item>
+      <ion-item-options side="left">
+        <button ion-button (click)="favorite(item)">Favorite</button>
+        <button ion-button color="danger" (click)="share(item)">Share</button>
+      </ion-item-options>
+  
+      <ion-item-options side="right">
+        <button ion-button (click)="unread(item)">Unread</button>
+      </ion-item-options>
+    </ion-item-sliding>
+  </ion-list>
+
+<hr>
+<!-- third card here -->
+
+<ion-list>
+  <ion-item-sliding #item>
+    <ion-item>
+      <ion-card>
+          <ion-grid>
+            <ion-row>
+              <!-- circle column is here -->
+              <ion-col col-3>
+                <div class="imgColDiv" style="text-align: center;"> 
+                  <div class="img-thumbnailDiv img-circleDiv">
+                    <div style="position: relative; padding: 0; cursor: pointer;" type="file">
+                      <img class="img-circleDiv2">
+                    </div>
+                  </div>   
+                </div>
+              </ion-col>
+              <!-- circle column ends here -->
+      
+              <ion-col col-7>
+                <h4>Priyanka Pareek</h4>
+                <p>Teacher</p>
+                <p>Exp 0 yrs</p>
+              </ion-col>
+              
+              <ion-col col-2>
+                
+              </ion-col>
+      
+            </ion-row>
+        </ion-grid>
+      </ion-card>
+    </ion-item>
+    <ion-item-options side="left">
+      <button ion-button (click)="favorite(item)">Favorite</button>
+      <button ion-button color="danger" (click)="share(item)">Share</button>
+    </ion-item-options>
+
+    <ion-item-options side="right">
+      <button ion-button (click)="unread(item)">Unread</button>
+    </ion-item-options>
+  </ion-item-sliding>
+</ion-list>
+
+<hr>
+<!-- fourth card here -->
+
+<ion-list>
+    <ion-item-sliding #item>
+      <ion-item>
+        <ion-card>
+            <ion-grid>
+              <ion-row>
+                <!-- circle column is here -->
+                <ion-col col-3>
+                  <div class="imgColDiv" style="text-align: center;"> 
+                    <div class="img-thumbnailDiv img-circleDiv">
+                      <div style="position: relative; padding: 0; cursor: pointer;" type="file">
+                        <img class="img-circleDiv3">
+                      </div>
+                    </div>   
+                  </div>
+                </ion-col>
+                <!-- circle column ends here -->
+          
+                <ion-col col-7>
+                  <h4>Vikas Pareek</h4>
+                  <p>Teacher</p>
+                  <p>Exp 4 yrs</p>
+                </ion-col>
+                
+                <ion-col col-2>
+                  
+                </ion-col>
+          
+              </ion-row>
+            </ion-grid>
+      </ion-card>
+      </ion-item>
+      <ion-item-options side="left">
+        <button ion-button (click)="favorite(item)">Favorite</button>
+        <button ion-button color="danger" (click)="share(item)">Share</button>
+      </ion-item-options>
+  
+      <ion-item-options side="right">
+        <button ion-button (click)="unread(item)">Unread</button>
+      </ion-item-options>
+    </ion-item-sliding>
+  </ion-list>
+
+<hr>
+
+<!-- fifth card here -->
+
+<ion-list>
+    <ion-item-sliding #item>
+      <ion-item>
+        <ion-card>
+          <ion-grid>
+            <ion-row>
+              <!-- circle column is here -->
+              <ion-col col-3>
+                <div class="imgColDiv" style="text-align: center;"> 
+                  <div class="img-thumbnailDiv img-circleDiv">
+                    <div style="position: relative; padding: 0; cursor: pointer;" type="file">
+                      <img class="img-circleDiv4">
+                    </div>
+                  </div>   
+                </div>
+              </ion-col>
+              <!-- circle column ends here -->
+        
+              <ion-col col-7>
+                <h4>G S Pareek</h4>
+                <p>Stenographer</p>
+                <p>Exp 40 yrs</p>
+              </ion-col>
+              
+              <ion-col col-2>
+                
+              </ion-col>
+        
+            </ion-row>
+          </ion-grid>
+        </ion-card>            
+      </ion-item>
+      <ion-item-options side="left">
+        <button ion-button (click)="favorite(item)">Favorite</button>
+        <button ion-button color="danger" (click)="share(item)">Share</button>
+      </ion-item-options>
+  
+      <ion-item-options side="right">
+        <button ion-button (click)="unread(item)">Unread</button>
+      </ion-item-options>
+    </ion-item-sliding>
+  </ion-list>
+
+<hr>
+
+<!-- sixth card here -->
+<ion-list>
+    <ion-item-sliding #item>
+      <ion-item>
+        <ion-card>
+            <ion-grid>
+              <ion-row>
+                <!-- circle column is here -->
+                <ion-col col-3>
+                  <div class="imgColDiv" style="text-align: center;"> 
+                    <div class="img-thumbnailDiv img-circleDiv">
+                      <div style="position: relative; padding: 0; cursor: pointer;" type="file">
+                        <img class="img-circleDiv5">
+                      </div>
+                    </div>   
+                  </div>
+                </ion-col>
+                <!-- circle column ends here -->
+          
+                <ion-col col-7>
+                  <h4>Kirti Azad</h4>
+                  <p>Teacher</p>
+                  <p>Exp 6 yrs</p>
+                </ion-col>
+                
+                <ion-col col-2>
+                  
+                </ion-col>
+          
+              </ion-row>
+            </ion-grid>
+          </ion-card>            
+      </ion-item>
+      <ion-item-options side="left">
+        <button ion-button (click)="favorite(item)">Favorite</button>
+        <button ion-button color="danger" (click)="share(item)">Share</button>
+      </ion-item-options>
+  
+      <ion-item-options side="right">
+        <button ion-button (click)="unread(item)">Unread</button>
+      </ion-item-options>
+    </ion-item-sliding>
+  </ion-list>
 
 </ion-content>

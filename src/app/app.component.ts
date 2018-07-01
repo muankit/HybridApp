@@ -12,7 +12,7 @@ import { EntrySlidesPage } from '../pages/entry-slides/entry-slides';
 
 export class MyApp {
 
-  homePage = EntrySlidesPage;
+  homePage = HomePage;
 
   @ViewChild('nav') nav : NavController;
 

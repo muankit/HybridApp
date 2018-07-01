@@ -79,7 +79,7 @@ page-home {
 
     //serach bar is here
     .searchbar-md{
-        padding: 0px;
+        padding: 8px 16px;
     }
     .searchbar-md .searchbar-search-icon{
         right: 16px;
@@ -99,7 +99,154 @@ page-home {
         padding: 10px 16px !important;
     }*/
     ion-content .scroll-content {
-        padding: 8px 16px !important;
+        padding: 0px !important;
     }
 
+    //ion horizontal scroll is here
+    ion-scroll{
+        white-space: nowrap;
+        height: 100px;
+        overflow-x: hidden;
+    }
+    .scroll-bar-indicator::-webkit-scrollbar , *::-webkit-scrollbar{
+        display: none;
+    }
+    .scrollHorizontal{
+        margin: 8px 16px;
+    }
+    //hori. scroll ends here
+    //hori scroll margin sets here
+    h5{
+        color: #E60052;
+        margin-bottom: 0rem;
+        font-family: 'Muli', sans-serif;
+
+    }
+    [padding] h5:first-child{
+        margin-top: 1.4rem;
+    }
+    //ends here
+    //right arrow is here
+    .arrowClass{
+        position: relative;
+        float: left;
+        margin-top: 16px;
+        margin-left: 50%;
+    }
+
+    // card circle is here
+    .img-circleDiv {
+        position: relative;
+        border-radius: 50%;
+        width: 60px;
+        height: 60px;
+        background-image: url(../assets/1.png);
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    //circle images are here
+    .img-circleDiv1{
+        position: relative;
+        border-radius: 50%;
+        width: 60px;
+        height: 60px;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-image: url(../assets/2.jpg);
+    }
+    .img-circleDiv2{
+        position: relative;
+        border-radius: 50%;
+        width: 60px;
+        height: 60px;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-image: url(../assets/3.jpg)
+    }
+    .img-circleDiv3{
+        position: relative;
+        border-radius: 50%;
+        width: 60px;
+        height: 60px;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-image: url(../assets/4.jpeg)
+    }   
+    .img-circleDiv4{
+        position: relative;
+        border-radius: 50%;
+        width: 60px;
+        height: 60px;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-image: url(../assets/5.jpeg)
+    }
+    .img-circleDiv5{
+        position: relative;
+        border-radius: 50%;
+        width: 60px;
+        height: 60px;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-image: url(../assets/6.jpeg)
+    }
+
+    //circle images ends here
+    
+    // .imgSpan {
+    //     text-align:center;
+    //     width:100%;
+    //     background:white;
+    //     bottom:0;
+    //     padding:20px 0;
+    //     opacity:0.5;
+    // }
+    // .imgCol{
+    //     position: relative;
+    //     margin-top: 19%;
+    // }
+    .img-thumbnailDiv {
+        display:inline-block;
+        overflow: hidden;
+        height: 60px;
+        border: 1px solid #000;
+    }
+    .circleClassDiv{
+        position: relative;
+        float: left;
+        text-align: center;
+        padding-left: 10%;
+        padding-top: 2%;
+    }  
+    
+    // card circle ends here
+
+    //card middle column is here 
+    .card-md h4{
+        font-size: 1.7rem;
+        font-weight: bold;
+        color: #818687;
+    }
+
+    //card outside margin padding is here
+    .card-md{
+        margin: 0px;
+        width: none;
+        webkit-box-shadow: none;
+        box-shadow:none;
+    }
+    .card-md p{
+        color: #C3C5C5;
+    }
+
+    // ion list solutions are here
+    .list-md{
+        margin : 0px;
+    }
+    .item-md{
+        padding-left: 0px;
+    }
+    .label-md{
+        margin: 0px;
+    }
 }
