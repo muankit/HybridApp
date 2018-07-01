@@ -13,6 +13,7 @@ import { FacultyFormPage } from '../pages/faculty-form/faculty-form';
 import { InstituteFirstFormPage } from '../pages/institute-first-form/institute-first-form';
 import { InstituteSecondFormPage } from '../pages/institute-second-form/institute-second-form';
 import { EntrySlidesPage } from '../pages/entry-slides/entry-slides';
+import { HomeInstitutePage } from '../pages/home-institute/home-institute';
 
 
 @NgModule({
@@ -25,7 +26,8 @@ import { EntrySlidesPage } from '../pages/entry-slides/entry-slides';
     FacultyFormPage,
     InstituteFirstFormPage,
     InstituteSecondFormPage,
-    EntrySlidesPage
+    EntrySlidesPage,
+    HomeInstitutePage
   ],
   imports: [
     BrowserModule,
@@ -45,7 +47,8 @@ import { EntrySlidesPage } from '../pages/entry-slides/entry-slides';
     FacultyFormPage,
     InstituteFirstFormPage,
     InstituteSecondFormPage,
-    EntrySlidesPage
+    EntrySlidesPage,
+    HomeInstitutePage
   ],
   providers: [
     StatusBar,

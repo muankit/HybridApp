@@ -41,8 +41,8 @@ export class LoginPage {
           text : 'Send Otp',
           role : 'send',
           handler : () =>{
-            this.navCtrl.push(HomePage);     
-          }
+            this.navCtrl.push(HomePage);
+         }
         }
       ],
     });
@@ -51,5 +51,9 @@ export class LoginPage {
 
   newUserClick(){
     this.navCtrl.push(EntrySlidesPage);
+  }
+
+  ionViewWillLeave(){
+    this.navCtrl.pop();
   }
 }
