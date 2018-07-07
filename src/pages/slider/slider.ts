@@ -20,15 +20,6 @@ export class SliderPage {
     console.log('ionViewDidLoad SliderPage');
   }
 
-  //this is next btn for form
-  gotoForm(){
-    if((this.navParams.get('title')) === 'faculty'){
-      this.navCtrl.push(FacultyFormPage);
-    }
-    else{
-      this.navCtrl.push(InstituteFirstFormPage);
-    }
-  }
   //this is skip btn for form
   skipBtn(){
     if((this.navParams.get('title')) === 'faculty'){

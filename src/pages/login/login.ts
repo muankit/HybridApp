@@ -53,7 +53,7 @@ export class LoginPage {
     this.navCtrl.push(EntrySlidesPage);
   }
 
-  ionViewWillLeave(){
-    this.navCtrl.pop();
-  }
+  // ionViewWillLeave(){
+  //   this.navCtrl.pop();
+  // }
 }

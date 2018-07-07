@@ -1,8 +1,13 @@
-<!-- No header -->
+<link href="https://fonts.googleapis.com/css?family=Exo" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Didact+Gothic" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Advent+Pro" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Actor" rel="stylesheet">
+
+
 <!-- new user header -->
 <ion-content padding>
   <h1 style=" font-size: 2.0em;
-              font-family:sans-serif;
+              font-family: 'Exo', sans-serif;
               position: relative;
               margin-top: 5%; 
               width: 100%;
@@ -23,7 +28,7 @@
       </button>
       
       <ion-col class="textCol"> 
-        <p class="addText">ADD AN IMAGE</p> 
+        <p class="addText" style="font-family: 'Advent Pro', sans-serif;">ADD AN IMAGE</p> 
       </ion-col>
     </ion-row>
   </ion-grid>
@@ -59,9 +64,9 @@
 <hr>
 <!-- qualification div is here -->
   <div>
-    <ion-label class="labelClass">Qualification</ion-label>
+    <ion-label class="labelClass" style="font-family: 'Actor', sans-serif;">Qualification</ion-label>
     <ion-card>
-      <ion-card-header (click)="QualtoggleAccordion()">Highest
+      <ion-card-header (click)="QualtoggleAccordion()" style="font-family: 'Didact Gothic', sans-serif">Highest
       </ion-card-header>
       <ion-card-content #qualCardCon>
         <ion-input placeholder="Degree"></ion-input>
@@ -73,9 +78,9 @@
 <hr>
 <!-- exp is here -->
   <div>
-    <ion-label class="labelClass">Experience</ion-label>
+    <ion-label class="labelClass" style="font-family: 'Actor', sans-serif;">Experience</ion-label>
     <ion-card>
-      <ion-card-header (click)="ExpSchtoggleAccordion()">School
+      <ion-card-header (click)="ExpSchtoggleAccordion()" style="font-family: 'Didact Gothic', sans-serif">School
       </ion-card-header>
       <ion-card-content #expCardCon>
         <ion-input placeholder="School Name"></ion-input>
@@ -96,7 +101,7 @@
     </ion-card>
 
     <ion-card>
-        <ion-card-header (click)="ExpInstoggleAccordion()">Institute
+        <ion-card-header (click)="ExpInstoggleAccordion()" style="font-family: 'Didact Gothic', sans-serif">Institute
         </ion-card-header>
         <ion-card-content #expInsCardCon>
             <ion-input placeholder="Institute Name"></ion-input>
@@ -119,7 +124,7 @@
 
 <!-- terms and conitions is here -->
 <ion-item>
-  <ion-label>I ACCEPT THE <a href="www.google.com">TERMS AND CONDITIONS</a></ion-label>
+  <ion-label style="font-family: 'Actor', sans-serif;">I ACCEPT THE <a href="www.google.com">TERMS AND CONDITIONS</a></ion-label>
   <ion-checkbox color="#E60052" checked="true"></ion-checkbox>
 </ion-item>
 

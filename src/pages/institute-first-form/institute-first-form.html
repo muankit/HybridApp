@@ -1,8 +1,13 @@
+<link href="https://fonts.googleapis.com/css?family=Exo" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Didact+Gothic" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Advent+Pro" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Actor" rel="stylesheet">
+
 
 <!-- new user header -->
 <ion-content padding>
     <h1 style=" font-size: 2.0em;
-                font-family:sans-serif;
+                font-family: 'Exo', sans-serif;
                 position: relative;
                 margin-top: 5%; 
                 width: 100%;
@@ -23,54 +28,55 @@
         </button>
         
         <ion-col class="textCol"> 
-          <p class="addText">ADD LOGO</p> 
+          <p class="addText" style="font-family: 'Advent Pro', sans-serif;">ADD LOGO</p> 
         </ion-col>
       </ion-row>
     </ion-grid>
   
 
   <!-- website is here -->
-
+  <div class="webDivClass">
     <ion-item>
-      <ion-label>Website</ion-label>
+      <ion-label style="font-family: 'Actor', sans-serif;">Website</ion-label>
       <ion-input></ion-input>
     </ion-item>
+  </div>
 
-    <ion-label>
-      Address
+    <!-- Address div is here -->
+    <div class="addressClass">
+      <ion-label class="addresslabel" style="font-family: 'Didact Gothic', sans-serif">Address</ion-label>
       <form [formGroup]="form" (ngSubmit)="onSubmit()">
           <ion-item>
-            <ion-label >State</ion-label>
+            <ion-label style="font-family: 'Actor', sans-serif;">State</ion-label>
             <ion-select formControlName="country" (ionChange)="onCountryChange()">
               <ion-option *ngFor="let country of countries" [value]="country">{{country}}</ion-option>
             </ion-select>
           </ion-item>
       
           <ion-item>
-            <ion-label >City</ion-label>
+            <ion-label style="font-family: 'Actor', sans-serif;">City</ion-label>
             <ion-select formControlName="state">
               <ion-option *ngFor="let state of states" [value]="state">{{state}}</ion-option>
             </ion-select>
           </ion-item>
       </form>
-    </ion-label>
-     
+    </div>
 
     <!-- Do you have any branch -->
     <div>
-      <ion-label>Do you have any branch ?</ion-label>
+      <ion-label class="branchClass" style="font-family: 'Didact Gothic', sans-serif">Do you have any branch ?</ion-label>
       <ion-grid>
         <ion-list radio-group>
           <ion-row>                    
             <ion-col>
                 <ion-item>
-                  <ion-label>Yes</ion-label>
+                  <ion-label style="font-family: 'Actor', sans-serif;">Yes</ion-label>
                   <ion-radio value="true"></ion-radio>
                 </ion-item>
             </ion-col>
             <ion-col>
                 <ion-item>
-                    <ion-label>No</ion-label>
+                    <ion-label style="font-family: 'Actor', sans-serif;">No</ion-label>
                     <ion-radio value="false"></ion-radio>
                 </ion-item>
             </ion-col>
@@ -80,25 +86,30 @@
     </div>
 
     <div>
-      <ion-label>Do you want any test material ?</ion-label>
+      <ion-label class="materiallabelClass" style="font-family: 'Didact Gothic', sans-serif">Do you want any test material ?</ion-label>
         <ion-grid>
-            <ion-list radio-group>
-              <ion-row>
-                <ion-col>
-                    <ion-item>
-                      <ion-label>Yes</ion-label>
-                      <ion-radio value="true"></ion-radio>
-                    </ion-item>
-                </ion-col>
-                <ion-col>
-                    <ion-item>
-                        <ion-label>No</ion-label>
-                        <ion-radio value="false"></ion-radio>
-                    </ion-item>
-                </ion-col>
-              </ion-row>
-            </ion-list>  
-         </ion-grid>
-      </div>
+          <ion-list radio-group>
+            <ion-row>
+              <ion-col>
+                  <ion-item>
+                    <ion-label style="font-family: 'Actor', sans-serif;">Yes</ion-label>
+                    <ion-radio value="true"></ion-radio>
+                  </ion-item>
+              </ion-col>
+              <ion-col>
+                  <ion-item>
+                      <ion-label style="font-family: 'Actor', sans-serif;">No</ion-label>
+                      <ion-radio value="false"></ion-radio>
+                  </ion-item>
+              </ion-col>
+            </ion-row>
+          </ion-list>  
+        </ion-grid>
+    </div>
+
+    <div>
+      <button ion-button full>Next
+      </button>
+    </div>
 
 </ion-content>

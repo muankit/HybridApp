@@ -44,7 +44,77 @@ page-institute-first-form {
 
     //Add image text
     .addText{
-        font-size: 1.2em;
+        font-size: 1.3em;
+    }
+    //addresslabel is here
+    .addresslabel{
+        font-size: 1.3em;
+    }
+    //branch label is here
+    .branchClass{
+        font-size: 1.3em;
+    }
+     //material label is here
+     .materiallabelClass{
+        font-size: 1.3em;
+    }
+
+    //next button css here
+    .button-md{
+        background-color: #E60052;
+        -webkit-box-shadow: none;
+        box-shadow: none;
+    
+    }
+    .button-md.activated{
+        background-color: #E60052;
+        -webkit-box-shadow: none;
+        box-shadow: none;
+    }
+    .item-md.item-input.item-input-has-focus .item-inner, .item-md.item-input.input-has-focus .item-inner{
+        border-bottom-color: #E60052;
+       -webkit-box-shadow: none ;
+        box-shadow: none  ;
+    }
+
+    //alert css here
+    .alert-md .alert-button{
+        color: #E60052;
+    }
+
+    //radio button is here
+    .radio-md .radio-icon{
+        border-color: #c0c0c0;   
+    }
+    .radio-md .radio-checked{
+        border-color: #c0c0c0;
+    }
+    .radio-md .radio-inner{
+        background-color: #E60052;
+    }
+    .item-md.item-block .item-inner{
+        border-bottom: none;
+    }
+    .item-radio-checked.item-md ion-label{
+        color: #E60052; 
+    }
+    .item-radio.item-md ion-label{
+        color: #999;   
+    }
+    //radio button ends here
+
+    //address div is here
+    .addressClass{
+        padding: 0px 0px 10px 0px;
+    }
+
+    //website div is here
+    .webDivClass{
+        padding: 5px 0px;
+    }
+
+    ion-label{
+        color: #E60052;
     }
 
 }
