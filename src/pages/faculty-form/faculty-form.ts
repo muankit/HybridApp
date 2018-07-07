@@ -1,6 +1,7 @@
 import { Component ,ViewChild, OnInit, Renderer, Input} from '@angular/core';
-import { IonicPage, NavController, NavParams, CardContent, AlertController } from 'ionic-angular';
+import { IonicPage, NavController, NavParams, CardContent, AlertController, Platform, ActionSheetController } from 'ionic-angular';
 import { HomePage } from '../home/home';
+import { Camera, CameraOptions } from '@ionic-native/camera'
 
 @IonicPage()
 @Component({
@@ -14,7 +15,14 @@ export class FacultyFormPage implements OnInit{
   @ViewChild("expCardCon") expSchCardContent : any;
   @ViewChild("expInsCardCon") expInsCardContent : any;
 
-  constructor(public navCtrl: NavController, public navParams: NavParams ,public renderer : Renderer , public alertCtrl : AlertController) {
+  constructor(public navCtrl: NavController,
+              public navParams: NavParams ,
+              public renderer : Renderer , 
+              public alertCtrl : AlertController,
+              public platform : Platform,
+              public actionsheetCtrl : ActionSheetController,
+              public camera : Camera,
+              public cameraOptions : CameraOptions) {
   }
 
   ionViewDidLoad() {
@@ -74,20 +82,46 @@ export class FacultyFormPage implements OnInit{
   }
 
   nextBtnClick(){
-    this.navCtrl.push(HomePage);
+    this.navCtrl.setRoot(HomePage).then(()=>{
+      let index = this.navCtrl.length()-2;
+      this.navCtrl.remove(index);
+    });
   }
   addImg(){
-    const alert = this.alertCtrl.create({
-        title : "Gallery Intent",
-        buttons : [
-          {
-            text: 'Add Image'
+    let actionSheet = this.actionsheetCtrl.create({
+      title: 'Option',
+      cssClass: 'action-sheets-basic-page',
+      buttons: [
+        {
+          text: 'Take photo',
+          role: 'destructive',
+          icon: !this.platform.is('ios') ? 'ios-camera-outline' : null,
+          handler: () => {
+            //this.captureImage(false);
           }
-        ]
-         
-      });
-      alert.present();
-    }
+        },
+        {
+          text: 'Choose photo from Gallery',
+          icon: !this.platform.is('ios') ? 'ios-images-outline' : null,
+          handler: () => {
+            //this.captureImage(true);
+          }
+        },
+      ]
+    });
+    actionSheet.present();
+  }
+
+  // async captureImage(useAlbum: boolean) {
+  //   const options: CameraOptions = {
+  //     quality: 100,
+  //     destinationType: this.camera.DestinationType.DATA_URL,
+  //     encodingType: this.camera.EncodingType.JPEG,
+  //     mediaType: this.camera.MediaType.PICTURE,
+  //     ...useAlbum ? {sourceType: this.camera.PictureSourceType.SAVEDPHOTOALBUM} : {}
+  //   }
+
+  // }
 }
 
 

@@ -41,7 +41,10 @@ export class LoginPage {
           text : 'Send Otp',
           role : 'send',
           handler : () =>{
-            this.navCtrl.push(HomePage);
+            this.navCtrl.setRoot(HomePage).then(()=>{
+              let index = this.navCtrl.length()-2;
+              this.navCtrl.remove(index);
+            });
          }
         }
       ],
@@ -50,7 +53,10 @@ export class LoginPage {
   }
 
   newUserClick(){
-    this.navCtrl.push(EntrySlidesPage);
+    this.navCtrl.push(EntrySlidesPage).then(()=>{
+      let index = this.navCtrl.length()-2;
+      this.navCtrl.remove(index);
+    });
   }
 
   // ionViewWillLeave(){

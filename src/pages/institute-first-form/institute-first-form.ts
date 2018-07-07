@@ -1,6 +1,7 @@
 import { Component, ChangeDetectorRef } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
 import { FormGroup, FormBuilder } from '@angular/forms';
+import { InstituteSecondFormPage } from '../institute-second-form/institute-second-form';
 
 
 @IonicPage()
@@ -1318,6 +1319,13 @@ export class InstituteFirstFormPage {
 
   ionViewDidLoad() {
     console.log('ionViewDidLoad InstituteFirstFormPage');
+  }
+
+  instituteFirstNextBtn(){
+    this.navCtrl.push(InstituteSecondFormPage).then(()=>{
+      let index = this.navCtrl.length()-2;
+      this.navCtrl.remove(index);
+    });
   }
 
 }

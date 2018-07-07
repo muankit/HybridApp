@@ -23,10 +23,16 @@ export class SliderPage {
   //this is skip btn for form
   skipBtn(){
     if((this.navParams.get('title')) === 'faculty'){
-      this.navCtrl.push(FacultyFormPage);
+      this.navCtrl.push(FacultyFormPage).then(()=>{
+        let index = this.navCtrl.length()-2;
+        this.navCtrl.remove(index);
+      });
     }
     else{
-      this.navCtrl.push(InstituteFirstFormPage);
+      this.navCtrl.push(InstituteFirstFormPage).then(()=>{
+        let index = this.navCtrl.length()-2;
+        this.navCtrl.remove(index);
+      });
     }
   }
 

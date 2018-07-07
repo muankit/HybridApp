@@ -47,14 +47,23 @@ export class EntrySlidesPage {
   //   this.navCtrl.push(FacultyFormPage);
   // }
   goToFacultySlider(){
-    this.navCtrl.push(SliderPage , this.paramObj);
+    this.navCtrl.push(SliderPage , this.paramObj).then(()=>{
+      let index = this.navCtrl.length()-2;
+      this.navCtrl.remove(index);
+    });
   }
   goToInstituteSlider(){
-    this.navCtrl.push(SliderPage , 'institute');
+    this.navCtrl.push(SliderPage , 'institute').then(()=>{
+      let index = this.navCtrl.length()-2;
+      this.navCtrl.remove(index);
+    });
   }
 
   backToLogin(){
-    this.navCtrl.push(LoginPage);
+    this.navCtrl.push(LoginPage).then(()=>{
+      let index = this.navCtrl.length()-2;
+      this.navCtrl.remove(index);
+    });
   }
 
   slideChanged(){
