@@ -14,7 +14,7 @@
               text-align: center;">NEW USER</h1>
 
 <!-- add image option -->
-  <ion-grid style="position: relative; margin-top: 10%;">
+  <ion-grid style="position: relative; margin-top: 10%;padding: 0px 0px 10px 0px">
     <ion-row>
       <button class="addImgBtn" (click)="addImg()">
         <ion-col class="imgCol" width-20>
@@ -63,7 +63,7 @@
 
 <hr>
 <!-- qualification div is here -->
-  <div>
+  <div class="qualDiv">
     <ion-label class="labelClass" style="font-family: 'Actor', sans-serif;">Qualification</ion-label>
     <ion-card>
       <ion-card-header (click)="QualtoggleAccordion()" style="font-family: 'Didact Gothic', sans-serif">Highest
@@ -77,7 +77,7 @@
 <!-- qual ends here -->
 <hr>
 <!-- exp is here -->
-  <div>
+  <div class="expDiv">
     <ion-label class="labelClass" style="font-family: 'Actor', sans-serif;">Experience</ion-label>
     <ion-card>
       <ion-card-header (click)="ExpSchtoggleAccordion()" style="font-family: 'Didact Gothic', sans-serif">School
@@ -123,7 +123,7 @@
 <!-- exp ends here -->
 
 <!-- terms and conitions is here -->
-<ion-item>
+<ion-item class="termConditionDiv">
   <ion-label style="font-family: 'Actor', sans-serif;">I ACCEPT THE <a href="www.google.com">TERMS AND CONDITIONS</a></ion-label>
   <ion-checkbox color="#E60052" checked="true"></ion-checkbox>
 </ion-item>

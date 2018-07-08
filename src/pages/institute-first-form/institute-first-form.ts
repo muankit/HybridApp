@@ -1,7 +1,9 @@
 import { Component, ChangeDetectorRef } from '@angular/core';
-import { IonicPage, NavController, NavParams } from 'ionic-angular';
+import { IonicPage, NavController, NavParams, ActionSheetController, Platform } from 'ionic-angular';
 import { FormGroup, FormBuilder } from '@angular/forms';
 import { InstituteSecondFormPage } from '../institute-second-form/institute-second-form';
+import { CameraOptions, Camera } from '@ionic-native/camera';
+import { ImagePicker } from '@ionic-native/image-picker';
 
 
 @IonicPage()
@@ -1303,12 +1305,22 @@ export class InstituteFirstFormPage {
   };
   states = [];
 
+  path : String;
 
-  constructor(formBuilder : FormBuilder, private changeDetectorRef : ChangeDetectorRef,public navCtrl: NavController, public navParams: NavParams) {
+
+  constructor(formBuilder : FormBuilder, 
+              private changeDetectorRef : ChangeDetectorRef,
+              private navCtrl: NavController, 
+              private actionsheetCtrl : ActionSheetController ,
+              private platform : Platform,
+              private camera : Camera,
+              private picker : ImagePicker) {
     this.form = formBuilder.group({
       country: [''],
       state: [''],
     });
+
+    this.path = "../assets/imgs/addImage.png";
   }
 
   onCountryChange(): void {
@@ -1328,4 +1340,64 @@ export class InstituteFirstFormPage {
     });
   }
 
+  addImg(){
+    let actionSheet = this.actionsheetCtrl.create({
+      title: 'Option',
+      cssClass: 'action-sheets-basic-page',
+      buttons: [
+        {
+          text: 'Take photo',
+          role: 'destructive',
+          icon: !this.platform.is('android') ? 'md-camera' : null,
+          handler: () => {
+            this.takeCameraPicture();
+          }
+        },
+        {
+          text: 'Choose photo from Gallery',
+          icon: !this.platform.is('android') ? 'md-image' : null,
+          handler: () => {
+            this.takeGalleryPhoto();
+          }
+        },
+      ]
+    });
+    actionSheet.present();
+  }
+
+  // choose photo from gallery
+  takeGalleryPhoto(){
+    let option =  {
+      title : " Select picture ",
+      message : "Select one picture",
+      maximumImagesCount : 1,
+      outType : 0 // 0-path , 1-base64
+    };
+    this.picker.getPictures(option).then(result => {
+      for(var i =0; i<result.length; ++i){
+        this.path = result[i];
+        alert("Gallery Path :" + result[i]);
+      } 
+    },err => {
+      alert("error : " + err);
+    })
+  }
+  //ends here
+
+  //camera is here
+  //camera function is here
+  takeCameraPicture(){
+    let option : CameraOptions = {
+      quality : 100 ,
+      destinationType : this.camera.DestinationType.FILE_URI,
+      encodingType : this.camera.EncodingType.PNG,
+      mediaType : this.camera.MediaType.PICTURE
+    };
+    this.camera.getPicture(option).then(uri => {
+      this.path = uri;
+      alert("Camera URI : " + uri);
+    },err => {
+      alert("error : " + err);
+    });
+  }
 }

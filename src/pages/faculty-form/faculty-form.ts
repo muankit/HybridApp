@@ -1,7 +1,8 @@
-import { Component ,ViewChild, OnInit, Renderer, Input} from '@angular/core';
-import { IonicPage, NavController, NavParams, CardContent, AlertController, Platform, ActionSheetController } from 'ionic-angular';
+import { Component ,ViewChild, OnInit, Renderer} from '@angular/core';
+import { IonicPage, NavController, NavParams, AlertController, Platform, ActionSheetController } from 'ionic-angular';
 import { HomePage } from '../home/home';
-import { Camera, CameraOptions } from '@ionic-native/camera'
+import { ImagePicker } from '@ionic-native/image-picker';
+import { CameraOptions , Camera, EncodingType, MediaType} from '@ionic-native/camera';
 
 @IonicPage()
 @Component({
@@ -9,6 +10,8 @@ import { Camera, CameraOptions } from '@ionic-native/camera'
   templateUrl: 'faculty-form.html',
 })
 export class FacultyFormPage implements OnInit{
+
+  path : String;
 
   accordionExapanded = false;
   @ViewChild("qualCardCon") QualCardContent: any;
@@ -21,8 +24,8 @@ export class FacultyFormPage implements OnInit{
               public alertCtrl : AlertController,
               public platform : Platform,
               public actionsheetCtrl : ActionSheetController,
-              public camera : Camera,
-              public cameraOptions : CameraOptions) {
+              public picker : ImagePicker,
+              public camera : Camera) {
   }
 
   ionViewDidLoad() {
@@ -95,16 +98,16 @@ export class FacultyFormPage implements OnInit{
         {
           text: 'Take photo',
           role: 'destructive',
-          icon: !this.platform.is('ios') ? 'ios-camera-outline' : null,
+          icon: 'md-camera',
           handler: () => {
-            //this.captureImage(false);
+            this.takeCameraPicture();
           }
         },
         {
           text: 'Choose photo from Gallery',
-          icon: !this.platform.is('ios') ? 'ios-images-outline' : null,
+          icon: 'md-images',
           handler: () => {
-            //this.captureImage(true);
+            this.takeGalleryPhoto();
           }
         },
       ]
@@ -112,16 +115,40 @@ export class FacultyFormPage implements OnInit{
     actionSheet.present();
   }
 
-  // async captureImage(useAlbum: boolean) {
-  //   const options: CameraOptions = {
-  //     quality: 100,
-  //     destinationType: this.camera.DestinationType.DATA_URL,
-  //     encodingType: this.camera.EncodingType.JPEG,
-  //     mediaType: this.camera.MediaType.PICTURE,
-  //     ...useAlbum ? {sourceType: this.camera.PictureSourceType.SAVEDPHOTOALBUM} : {}
-  //   }
+  // choose photo from gallery
+  takeGalleryPhoto(){
+    let option =  {
+      title : " Select picture ",
+      message : "Select one picture",
+      maximumImagesCount : 1,
+      outType : 0 // 0-path , 1-base64
+    };
+    this.picker.getPictures(option).then(result => {
+      for(var i =0; i<result.length; ++i){
+        this.path = result[i];
+        alert("Gallery Path :" + result[i]);
+      } 
+    },err => {
+      alert("error : " + err);
+    })
+  }
+  //ends here
 
-  // }
+  //camera function is here
+  takeCameraPicture(){
+    let option : CameraOptions = {
+      quality : 100 ,
+      destinationType : this.camera.DestinationType.FILE_URI,
+      encodingType : this.camera.EncodingType.PNG,
+      mediaType : this.camera.MediaType.PICTURE
+    };
+    this.camera.getPicture(option).then(uri => {
+      this.path = uri;
+      alert("Camera URI : " + uri);
+    },err => {
+      alert("error : " + err);
+    });
+  }
 }
 
 

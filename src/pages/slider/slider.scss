@@ -37,12 +37,6 @@ page-slider {
         font-size: 3em;
         font-family: Arial, Helvetica, sans-serif;
     }
-    //welocme div for image
-    .welcomeDiv{
-        background-image: url(../assets/welcomeImage.jpg);
-        background-repeat: no-repeat;
-        background-size: cover;
-    }
 
     //welcome div for text 
     .welcomeTextDiv{
@@ -66,7 +60,7 @@ page-slider {
         background-image: none !important;
     }
     .button-md{
-        webkit-box-shadow: none;
+        -webkit-box-shadow: none;
         box-shadow: none;
     }
     //ends here
