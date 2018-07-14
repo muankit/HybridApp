@@ -5,10 +5,11 @@
         </div>
 
         <ion-list>
-            <button ion-item icon-left>Home</button>
+            <button ion-item icon-left (click)="onLoad(homePage)">Home</button>
             <br>
-            <button ion-item icon-left >Dashboard</button>
-            <button ion-item icon-left >Edit Profile</button> 
+            <!-- <button ion-item icon-left (click)="onLoad(facultyDashboard)">Dashboard</button> -->
+            <br>
+            <!-- <button ion-item icon-left (click)="gotoEditProfile()">Edit Profile</button>  -->
             <!--  (click)="onLoad(editProfilePage)" -->
         </ion-list>
     </ion-content>

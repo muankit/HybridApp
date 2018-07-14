@@ -100,26 +100,28 @@
       <ion-item>
       <ion-card>
         <ion-grid>
-          <ion-row>
-            <!-- circle column is here -->
-            <ion-col col-3>
-              <div class="imgColDiv" style="text-align: center;"> 
-                <div class="img-thumbnailDiv img-circleDiv">
-                  <div style="position: relative; padding: 0; cursor: pointer;" type="file">
-                    <img class="img-circleDiv">
-                  </div>
-                </div>   
-              </div>
-            </ion-col>
-            <!-- circle column ends here -->
-      
-            <ion-col col-9>
-              <h4>Ankit Pareek</h4>
-              <p>Developer</p>
-              <p>Exp 6 months</p>
-            </ion-col>
-      
-          </ion-row>
+          <button (click)="facultyClick()" class="firstCardClass">
+            <ion-row>
+              <!-- circle column is here -->
+              <ion-col col-3>
+                <div class="imgColDiv" style="text-align: center;"> 
+                  <div class="img-thumbnailDiv img-circleDiv">
+                    <div style="position: relative; padding: 0; cursor: pointer;" type="file">
+                      <img class="img-circleDiv">
+                    </div>
+                  </div>   
+                </div>
+              </ion-col>
+              <!-- circle column ends here -->
+              <ion-col col-9>
+                <div style="float: left;">
+                  <h4>Ankit Pareek</h4>
+                  <p style="text-align: left;">App Developer</p>
+                  <p style="text-align: left;">Exp 8 months</p>
+                </div>
+              </ion-col>
+            </ion-row>
+          </button>
         </ion-grid>
       </ion-card>
     </ion-item>
@@ -160,7 +162,7 @@
       
               <ion-col col-9>
                 <h4>Ashish Pareek</h4>
-                <p>Marketing Managaer</p>
+                <p>Product Managaer</p>
                 <p>Exp 6 yrs</p>
               </ion-col>
              

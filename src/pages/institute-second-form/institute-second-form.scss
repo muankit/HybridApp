@@ -1,3 +1,31 @@
 page-institute-second-form {
+    //checkbox class
+    .checkboxClass{
+        color: #E60052;
+        margin: 12px 0px 0px 5px;
+    }
+    .checkbox-md .checkbox-checked{
+        border-color: #E60052;
+        background-color: #E60052;
+    }
 
+    // grid css 
+    .grid{
+        padding: 0px;
+    }
+
+    // go to home btn
+    .toHomeBtn{
+        background-color: #E60052;
+        margin: 50px 0px 0px 0px ;
+    }
+    .button-md.activated{
+        background-color: #E60052;
+        box-shadow: none;
+        -webkit-box-shadow : none;
+    }
+    .button-md{
+        box-shadow: none;
+        -webkit-box-shadow : none;
+    }
 }

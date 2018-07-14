@@ -3,12 +3,9 @@ import { Platform , App, Slide , NavController, MenuController, AlertController}
 import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
 
-import { InstituteFirstFormPage } from '../pages/institute-first-form/institute-first-form';
-import { FacultyFormPage } from '../pages/faculty-form/faculty-form';
-import { HomeInstitutePage } from '../pages/home-institute/home-institute';
-import { HomePage } from '../pages/home/home';
-import { InstituteSecondFormPage } from '../pages/institute-second-form/institute-second-form';
 import { LoginPage } from '../pages/login/login';
+import { FacultyDashboardPage } from '../pages/faculty-dashboard/faculty-dashboard';
+import { InstituteDashboardPage } from '../pages/institute-dashboard/institute-dashboard';
 
 @Component({
   templateUrl: 'app.html'
@@ -17,11 +14,17 @@ import { LoginPage } from '../pages/login/login';
 export class MyApp {
 
   homePage = LoginPage;
+  facultyDashboard = FacultyDashboardPage;
+  instituteDashboard = InstituteDashboardPage;
   public alertShown:boolean = false;
+
 
   @ViewChild('nav') nav : NavController;
 
-  constructor(platform: Platform, statusBar: StatusBar, public alertCtrl : AlertController ,splashScreen: SplashScreen , public menuCtrl : MenuController) {
+  constructor(platform: Platform, statusBar: StatusBar, 
+              public alertCtrl : AlertController ,
+              splashScreen: SplashScreen , 
+              public menuCtrl : MenuController,) {
     platform.ready().then(() => {
       // Okay, so the platform is ready and our plugins are available.
       // Here you can do any higher level native things you might need.

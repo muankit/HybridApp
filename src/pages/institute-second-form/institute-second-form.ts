@@ -1,12 +1,6 @@
-import { Component } from '@angular/core';
+import { Component, ViewChild, ElementRef } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
-
-/**
- * Generated class for the InstituteSecondFormPage page.
- *
- * See https://ionicframework.com/docs/components/#navigation for more info on
- * Ionic pages and navigation.
- */
+import { HomeInstitutePage } from '../home-institute/home-institute';
 
 @IonicPage()
 @Component({
@@ -15,11 +9,27 @@ import { IonicPage, NavController, NavParams } from 'ionic-angular';
 })
 export class InstituteSecondFormPage {
 
+  // @ViewChild('myInput') myInput: ElementRef;
+
   constructor(public navCtrl: NavController, public navParams: NavParams) {
   }
 
   ionViewDidLoad() {
     console.log('ionViewDidLoad InstituteSecondFormPage');
+  }
+
+  // resize() {
+  //   var element = this.myInput['_elementRef'].nativeElement.getElementsByClassName("text-input")[0];
+  //   var scrollHeight = element.scrollHeight;
+  //   element.style.height = scrollHeight + 'px';
+  //   this.myInput['_elementRef'].nativeElement.style.height = (scrollHeight + 16) + 'px';
+  // }
+
+  gotoHome(){
+    this.navCtrl.setRoot(HomeInstitutePage).then(()=>{
+      let index = this.navCtrl.length()-2;
+      this.navCtrl.remove(index);
+    });
   }
 
 }

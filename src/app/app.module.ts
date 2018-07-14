@@ -7,15 +7,20 @@ import { Camera } from '@ionic-native/camera';
 import { ImagePicker } from '@ionic-native/image-picker';
 
 import { MyApp } from './app.component';
-import { HomePage } from '../pages/home/home';
+import { HomePage } from '../pages/home-faculty/home';
 import { LoginPage } from '../pages/login/login';
 import { SliderPage } from '../pages/slider/slider';
-import { TabsPage } from '../pages/tabs/tabs';
 import { FacultyFormPage } from '../pages/faculty-form/faculty-form';
 import { InstituteFirstFormPage } from '../pages/institute-first-form/institute-first-form';
 import { InstituteSecondFormPage } from '../pages/institute-second-form/institute-second-form';
 import { EntrySlidesPage } from '../pages/entry-slides/entry-slides';
 import { HomeInstitutePage } from '../pages/home-institute/home-institute';
+import { JobClickPage } from '../pages/job-click/job-click';
+import { ResumeOverviewPage } from '../pages/resume-overview/resume-overview';
+import { FacultyClickPage } from '../pages/faculty-click/faculty-click';
+import { CallNumber } from '../../node_modules/@ionic-native/call-number';
+import { FacultyDashboardPage } from '../pages/faculty-dashboard/faculty-dashboard';
+import { InstituteDashboardPage } from '../pages/institute-dashboard/institute-dashboard';
 
 
 @NgModule({
@@ -24,12 +29,16 @@ import { HomeInstitutePage } from '../pages/home-institute/home-institute';
     HomePage,
     LoginPage,
     SliderPage,
-    TabsPage,
     FacultyFormPage,
     InstituteFirstFormPage,
     InstituteSecondFormPage,
     EntrySlidesPage,
-    HomeInstitutePage
+    HomeInstitutePage,
+    JobClickPage,
+    ResumeOverviewPage,
+    FacultyClickPage,
+    FacultyDashboardPage,
+    InstituteDashboardPage
   ],
   imports: [
     BrowserModule,
@@ -45,18 +54,23 @@ import { HomeInstitutePage } from '../pages/home-institute/home-institute';
     HomePage,
     LoginPage,
     SliderPage,
-    TabsPage,
     FacultyFormPage,
     InstituteFirstFormPage,
     InstituteSecondFormPage,
     EntrySlidesPage,
-    HomeInstitutePage
+    HomeInstitutePage,
+    JobClickPage,
+    ResumeOverviewPage,
+    FacultyClickPage,
+    FacultyDashboardPage,
+    InstituteDashboardPage
   ],
   providers: [
     StatusBar,
     SplashScreen,
     Camera,
     ImagePicker,
+    CallNumber,
     {provide: ErrorHandler, useClass: IonicErrorHandler}
   ]
 })

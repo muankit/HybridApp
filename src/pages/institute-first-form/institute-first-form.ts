@@ -1348,14 +1348,14 @@ export class InstituteFirstFormPage {
         {
           text: 'Take photo',
           role: 'destructive',
-          icon: !this.platform.is('android') ? 'md-camera' : null,
+          icon: 'md-camera',
           handler: () => {
             this.takeCameraPicture();
           }
         },
         {
           text: 'Choose photo from Gallery',
-          icon: !this.platform.is('android') ? 'md-image' : null,
+          icon: 'md-image',
           handler: () => {
             this.takeGalleryPhoto();
           }

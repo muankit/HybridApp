@@ -1,8 +1,8 @@
 import { Component ,ViewChild, OnInit, Renderer} from '@angular/core';
 import { IonicPage, NavController, NavParams, AlertController, Platform, ActionSheetController } from 'ionic-angular';
-import { HomePage } from '../home/home';
+import { HomePage } from '../home-faculty/home';
 import { ImagePicker } from '@ionic-native/image-picker';
-import { CameraOptions , Camera, EncodingType, MediaType} from '@ionic-native/camera';
+import { CameraOptions , Camera} from '@ionic-native/camera';
 
 @IonicPage()
 @Component({

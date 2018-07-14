@@ -1,0 +1,212 @@
+page-resume-overview {
+    //circle is here
+    .img-circle {
+        position: relative;
+        border-radius: 50%;
+        width: 40px;
+        height: 40px;
+        background-image: url(../assets/homeLogo.jpg);
+        background-repeat: no-repeat center  center fixed;
+        background-size: cover;
+    }
+    .img-thumbnail {
+        display:inline-block;
+        overflow: hidden;
+        height: 40px;
+        border: 1px solid #000;
+    }
+    .addImgBtn{
+        background: transparent;
+    }
+    //circle ends here
+
+    //toobar back ground is here
+    .toolbar-background-md{
+        background: transparent;
+    }
+    //header css from home
+    ion-header.header.header-md::after {
+        background-image: none !important;
+        height: 0px !important;
+    }
+    .toolbar-md {
+        padding: 0px;
+    }
+    //ends here
+   // css for header::after
+    .header-md::after,
+    .tabs-md[tabsPlacement="top"] > .tabbar::after,
+    .footer-md::before, .tabs-md[tabsPlacement="bottom"] > .tabbar::before {
+        height: 0px !important; 
+    }
+  // end css header::after
+
+    //header title
+    .toolbar-title-md{
+        margin-top: 3%;
+        padding: 0px;
+        position: relative;
+        float: left;
+        text-align: center;
+        color: #E60052;
+    }
+
+    //header back btn color
+    .bar-button-default-md{
+        color: #E60052;
+    }
+
+        //text col
+    .textCol{
+        text-align: left;
+    }
+    //ends here
+
+    //Add image text
+    .addText{
+        font-size: 1.2em;
+        color: #E60052;
+    }
+
+    //gender is here
+    .appForm{
+        margin: 10px;
+    }
+    .female{
+        background-image: url(../assets/imgs/female-50.png);
+        background-repeat: no-repeat;
+        background-size: contain;
+    }
+    .male{
+        background-image: url(../assets/imgs/male-50.png);
+        background-repeat: no-repeat;
+        background-size: contain;
+    }
+    .radio-md .radio-icon{
+        border-color: #c0c0c0;   
+    }
+    .radio-md .radio-checked{
+        border-color: #c0c0c0;
+    }
+    .item-md.item-block .item-inner{
+        padding-right: 100%;
+    }
+    .radio-md .radio-inner{
+        background-color: #E60052;
+    }
+    .item-md.item-block .item-inner{
+        border-bottom: none;
+    }
+    //gender ends here
+    //next btn
+    .nextBtnClass{
+        position: relative;
+        text-align: center;
+    }
+
+    //Accordian
+    .card-header{
+        background-color:  #E60052;
+        color: #fff;
+    }
+    .card-content {
+        padding: 0px 16px; 
+        max-height: 0px;
+    }
+    //accordian ends here
+
+    //checkbox setup here
+    .item-md.item-block .item-inner{
+        padding: 0;
+    }
+    .item.item-md .checkbox-md{
+        margin : 9px 15px 9px 4px;
+    }
+    //label is here
+    .label-md{
+        margin: 13px 8px 13px 10px;
+    }
+    .labelClass{
+        font-size: 1.4em;
+    }
+
+    //qualification div is here
+    .qualDiv{
+        padding: 0px 0px 10px 0px;
+    }
+    //experience div is here
+    .expDiv{
+        padding: 0px 0px 10px 0px;
+    }
+    //terms and condition div is here
+    .termConditionDiv{
+        padding: 0px 0px 10px 0px;
+    }  
+    
+    //school inner div for button is here
+    .schExpInnerDiv{
+        background: transparent;
+    }
+    //inner div for btn ends here
+    //sch outer div is here
+    .schExpOuterDiv{
+        position: relative;
+        text-align: right;
+    }
+    //oute sch div ends here
+
+    //ion card sch exp is here
+    .schExpCard{
+        padding: 10px;
+        box-shadow: 0 8px 22px 0 rgba(239, 239, 239, 1.0), 0 8px 17px 0 rgba(239, 239, 239, 1.0);
+    }
+    //ion card sch exp ends here
+
+    //qualification card is here
+    .qualCardClass{
+        padding: 10px;
+        box-shadow: 0 8px 22px 0 rgba(239, 239, 239, 1.0), 0 8px 17px 0 rgba(239, 239, 239, 1.0);
+    }
+    //qual card ends here
+
+    //institute exp card/div is here
+    .insExpCard{
+        padding: 10px;
+        box-shadow: 0 8px 22px 0 rgba(239, 239, 239, 1.0), 0 8px 17px 0 rgba(239, 239, 239, 1.0);
+    }
+    .insExpDiv{
+        margin-top: 30px;
+    }
+    //ins card/div ends here
+
+    //ion grid , row and col css here
+    .grid{
+        padding: 0px;
+    }
+    .col{
+        padding: 0px ;
+    }
+    [col-3]{
+        padding: 0px;
+    }
+    //ion grid row col css ends here
+
+    //icon with headings like qual and exp css here
+    .addIconClass{
+        text-align: right;
+        margin-top: 5%;
+        margin-right: 5%;
+    }
+    //heading icon css ends here
+
+    //p elementis here
+    p {
+        font-family: 'Didact Gothic', sans-serif;
+        padding: 5px;
+    }
+    .card-md p{
+        font-weight: bold;
+    }
+    //p element ends here
+
+}

@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
+import { FacultyClickPage } from '../faculty-click/faculty-click';
 
 @IonicPage()
 @Component({
@@ -13,6 +14,10 @@ export class HomeInstitutePage {
 
   ionViewDidLoad() {
     console.log('ionViewDidLoad HomeInstitutePage');
+  }
+
+  facultyClick(){
+    this.navCtrl.push(FacultyClickPage);
   }
 
 }

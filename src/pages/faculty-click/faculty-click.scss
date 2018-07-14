@@ -1,0 +1,139 @@
+page-faculty-click {
+    //toobar back ground is here
+    .toolbar-background-md{
+        background: transparent;
+    }
+    //header css from home
+    ion-header.header.header-md::after {
+        background-image: none !important;
+        height: 0px !important;
+    }
+    .toolbar-md {
+        padding: 0px;
+    }
+    //ends here
+   // css for header::after
+    .header-md::after,
+    .tabs-md[tabsPlacement="top"] > .tabbar::after,
+    .footer-md::before, .tabs-md[tabsPlacement="bottom"] > .tabbar::before {
+        height: 0px !important; 
+    }
+  // end css header::after
+
+    //header title
+    .toolbar-title-md{
+        margin-top: 3%;
+        padding: 0px;
+        position: relative;
+        float: left;
+        text-align: center;
+        color: #E60052;
+    }
+
+    //header back btn color
+    .bar-button-default-md{
+        color: #E60052;
+    }
+
+    //image is here
+    .img-circleDiv {
+        position: relative;
+        border-radius: 10px;
+        width: 80px;
+        height: 80px;
+        background-image: url(../assets/1.png);
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    //addres label
+    .addLabelClass{
+        color: #E60052;
+        font-size: 1.4em;
+    }
+    //qual label
+    .qualLabelClass{
+        color: #E60052;
+        font-size: 1.4em;
+    }
+    //exp label
+    .expLabelClass{
+        color: #E60052;
+        font-size: 1.4em;
+    }
+    //assessment question
+    .assQuesLabelClass{
+        color: #E60052;
+        font-size: 1.4em;
+    }
+
+    //margin in ins exp
+    .insExpDivClass{
+        margin-top: 30px;
+    }
+
+    //card css here
+    .allCardClass{
+        padding: 10px;
+        box-shadow: 0 8px 22px 0 rgba(239, 239, 239, 1.0), 0 8px 17px 0 rgba(239, 239, 239, 1.0);
+    }
+    //add div is here
+    .addressDiv{
+        padding: 0px 0px 10px 0px;
+    }
+    //qual div 
+    .qualDiv{
+        padding: 0px 0px 10px 0px;
+    }
+    //exp div
+    .expDiv{
+        padding: 0px 0px 10px 0px;                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                     
+    }
+     //ion grid , row and col css here
+     .grid{
+        padding: 0px;
+    }
+    .col{
+        padding: 0px ;
+    }
+    [col-3]{
+        padding: 0px;
+    }
+    //ion grid row col css ends here
+
+    //P tag
+    .assQuesPtag{
+        text-align: justify;
+        padding: 0px 8px 0px 16px;
+        color: #666;
+    }
+    p {
+        font-family: 'Didact Gothic', sans-serif;
+        padding: 5px;
+    }
+    .card-md p{
+        font-weight: bold;
+    }
+    //p element ends here
+
+    //grid footer css is here
+    .grid{
+        padding: 0px;
+    }
+    .col{
+        padding: 0px;
+    }
+    .button-md{
+        background-color: #E60052;
+        box-shadow: none;
+        -webkit-box-shadow : none;
+        margin: 0px;
+    }
+    //activated button color css 
+    .button-md.activated{
+        background-color: #E60052;
+        box-shadow: none;
+        -webkit-box-shadow : none;
+    }
+
+    
+}

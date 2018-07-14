@@ -1,0 +1,173 @@
+<link href="https://fonts.googleapis.com/css?family=Oxygen|Ubuntu" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Actor" rel="stylesheet">
+
+
+<ion-header>
+
+    <ion-navbar>
+      <ion-grid>
+        <ion-row>
+          <ion-col col-2>
+
+          </ion-col>
+      
+          <ion-col col-5 style="text-align: center;">
+            <ion-title style="font-family: 'Oxygen', sans-serif;">
+                RESUME
+            </ion-title>
+          </ion-col>
+  
+        </ion-row>
+      </ion-grid>
+    </ion-navbar>    
+
+</ion-header>
+
+
+<ion-content padding>
+  <!-- first grid is here -->
+  <ion-grid>
+    <ion-row>
+      <ion-col col-4>
+        <div class="imgColDiv" style="text-align: center;"> 
+          <div class="img-thumbnailDiv img-circleDiv">
+            <div style="position: relative; padding: 0; cursor: pointer;" type="file">
+              <img class="img-circleDiv">
+            </div>
+          </div>   
+        </div>
+      </ion-col>
+
+      <ion-col col-8 style="padding-left: 3%;">
+        <h4 style="margin : 0px 0px 10px 0px; color: #818687; font-family: 'Comfortaa', cursive;">Ankit Pareek</h4>
+        <h6 style="text-align: left; margin: 0px 0px 6px 0px; color: #C3C5C5 ; font-family: 'Poiret One', cursive;">mu.ankit98@gmail.com</h6>
+        <h6 style="text-align: left; margin: 0px 0px 6px 0px; color: #C3C5C5; font-family: 'Poiret One', cursive;">7737830189</h6>
+      </ion-col>
+
+    </ion-row>
+  </ion-grid>
+    <!-- first grid ends here -->
+
+    <!-- address card is here -->
+    <div class="addressDiv">
+      <ion-label class="addLabelClass" style=" font-family: 'Actor', sans-serif;">Address</ion-label>
+      <ion-card class="allCardClass">
+        <div>
+          <ion-item>
+            <p>State</p>
+            <p>City</p>
+          </ion-item>   
+        </div> 
+      </ion-card> 
+    </div>
+
+    <!-- address card ends here -->
+  
+    <div class="qualDiv">
+      <ion-label class="qualLabelClass" style="font-family: 'Actor', sans-serif;">Qulaification</ion-label>
+      <ion-card class="allCardClass">
+        <div>
+          <ion-item>
+            <p>Degree</p>
+            <p>Year Of Completeion</p>
+          </ion-item>   
+        </div> 
+      </ion-card> 
+    </div>
+
+    <div class="expDiv">
+        <ion-label class="expLabelClass" style=" font-family: 'Actor', sans-serif;">Experience</ion-label>
+        <div>
+        <ion-card class="allCardClass">
+          <div>
+            <ion-item>
+                <p>St. Wilfred's School</p>
+                <ion-grid>
+                  <ion-row>
+                    <ion-col col-3>
+                      <p>From :</p>
+                    </ion-col>
+                    <ion-col col-3>
+                      <p style="color: #c0c0c0;">02/2014</p>
+                    </ion-col>
+                    <ion-col col-3>
+                      <p>To :</p>
+                    </ion-col>
+                    <ion-col col-3>
+                      <p style="color: #c0c0c0;">12/2017</p>
+                    </ion-col>
+                  </ion-row>
+                </ion-grid>
+          
+                <p>NEET</p>
+                <p>Chemistry</p>
+                <p>Jaipur</p>
+            </ion-item>   
+          </div> 
+        </ion-card> 
+      </div>
+
+      <div class="insExpDivClass">
+        <ion-card class="allCardClass">
+          <div>
+            <ion-item>
+                <p>St. Wilfred's School</p>
+                <ion-grid>
+                  <ion-row>
+                    <ion-col col-3>
+                      <p>From :</p>
+                    </ion-col>
+                    <ion-col col-3>
+                      <p style="color: #c0c0c0;">02/2014</p>
+                    </ion-col>
+                    <ion-col col-3>
+                      <p>To :</p>
+                    </ion-col>
+                    <ion-col col-3>
+                      <p style="color: #c0c0c0;">12/2017</p>
+                    </ion-col>
+                  </ion-row>
+                </ion-grid>
+          
+                <p>NEET</p>
+                <p>Chemistry</p>
+                <p>Jaipur</p>
+            </ion-item>   
+          </div> 
+        </ion-card> 
+      </div>
+    </div>
+
+    <div>
+      <ion-label class="assQuesLabelClass" style=" font-family: 'Actor', sans-serif;">Assessment Question</ion-label>
+      <div>
+        <ion-card class="allCardClass">
+          <p class="assQuesPtag">Lorem Ipsum fjdkf fhdsk sdklfdslk sdhfasdf sdfksdf sdjf fsmfnskdfs 
+            lksdflksdflk jlkfjd slkf sfksdfdf dsflkdsjfd ffks  lknfds fdlk
+            sndfldsnsdlfk fflkdnfd fnfl flkfnkf f ldskfnld fdsln. 
+          </p>
+        </ion-card>
+      </div>
+    </div>
+
+</ion-content>
+
+<ion-footer>
+  <ion-grid>
+    <ion-row>
+      
+      <ion-col col-4>
+        <button ion-button full (click)="callEvent()">Call</button>
+      </ion-col>
+
+      <ion-col col-4>
+        <button full ion-button (click)="reviewEvent()">For Review</button>
+      </ion-col>
+      
+      <ion-col col-4>
+        <button ion-button full (click)="selectEvent()">Select</button>
+      </ion-col>
+    
+    </ion-row>
+  </ion-grid>
+</ion-footer>

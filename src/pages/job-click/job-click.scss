@@ -1,0 +1,136 @@
+page-job-click {
+     // card circle is here
+     .img-circleDiv {
+        position: relative;
+        border-radius: 10px;
+        width: 80px;
+        height: 80px;
+        background-image: url(../assets/exam.JPG);
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    // .img-thumbnail {
+    //     display:inline-block;
+    //     overflow: hidden;
+    //    // height: 50px;
+    //     border: 1px solid #000;
+    // }
+    // .imgCol{
+    //     position: relative; 
+    //     margin-top: 19%;
+    // }
+
+    //header circle is here
+    //circle is here
+    .img-circle {
+        position: relative;
+        border-radius: 50%;
+        width: 30px;
+        height: 30px;
+        background-image: url(../assets/homeLogo.jpg);
+        background-repeat: no-repeat center  center fixed;
+        background-size: cover;
+    }
+    
+    // .imgSpan {
+    //     text-align:center;
+    //     width:100%;
+    //     background:white;
+    //     bottom:0;
+    //     padding:20px 0;
+    //     opacity:0.5;
+    // }
+    // .imgCol{
+    //     position: relative;
+    //     margin-top: 19%;
+    // }
+    .img-thumbnail {
+        display:inline-block;
+        overflow: hidden;
+        height: 30px;
+        border: 1px solid #000;
+    }
+
+    // circle and text ends here
+
+    //toobar back ground is here
+    .toolbar-background-md{
+        background: transparent;
+    }
+    //header css from home
+    ion-header.header.header-md::after {
+        background-image: none !important;
+        height: 0px !important;
+    }
+    .toolbar-md {
+        padding: 0px;
+    }
+    //ends here
+   // css for header::after
+    .header-md::after,
+    .tabs-md[tabsPlacement="top"] > .tabbar::after,
+    .footer-md::before, .tabs-md[tabsPlacement="bottom"] > .tabbar::before {
+        height: 0px !important; 
+    }
+  // end css header::after
+    
+  //header back btn color
+    .bar-button-default-md{
+        color: #E60052;
+    }
+
+    //header title
+    .toolbar-title-md{
+        margin-top: 3%;
+        padding: 0px;
+        position: relative;
+        float: left;
+        text-align: center;
+        color: #E60052;
+    }
+
+    //hr below header
+    .headerBelowClass{
+        position: relative;
+        float: left;
+    }
+    //back btn css here
+    .backBtnColClass{
+        padding: 0px;
+    }
+    .backBtnClass{
+        background-color: transparent;
+        color: #E60052;
+        box-shadow: none;
+        -webkit-box-shadow : none;
+    }
+    .contentClass{
+        position: relative;
+        float: left;
+    }
+    //grid footer css is here
+    .grid{
+        padding: 0px;
+    }
+    .col{
+        padding: 0px;
+    }
+    [col-6]{
+        padding: 0px;
+    }
+    .button-md{
+        background-color: #E60052;
+        box-shadow: none;
+        -webkit-box-shadow : none;
+        margin: 0px;
+    }
+    
+    
+    //activated button color css 
+    .button-md.activated{
+        background-color: #E60052;
+        box-shadow: none;
+        -webkit-box-shadow : none;
+    }
+
+}

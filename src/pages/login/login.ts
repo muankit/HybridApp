@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams, AlertController } from 'ionic-angular';
-import { HomePage } from '../home/home';
+import { HomePage } from '../home-faculty/home';
 import { EntrySlidesPage } from '../entry-slides/entry-slides';
 //import { Keyboard } from '@ionic-native/keyboard';
 

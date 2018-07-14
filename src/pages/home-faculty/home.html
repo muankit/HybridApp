@@ -51,15 +51,17 @@
       <p>JObs details</p>
     </ion-card-content>
   </ion-card> -->
-
+<div #horiScrollContent>
   <ion-grid>
     <ion-row>
-      <ion-col>
+      <ion-col col-5>
         <h5>Recommended</h5>
       </ion-col>
 
-      <ion-col class="arrowClass">
-        <ion-icon name="ios-arrow-forward-outline"></ion-icon>
+      <ion-col col-5 class="arrowClass">
+        <button ion-button (click)="scrollTopixels()" class="scrollBtnClass">
+          <ion-icon name="ios-arrow-forward-outline"></ion-icon>
+        </button>
       </ion-col>
     </ion-row>
   </ion-grid>
@@ -90,6 +92,7 @@
     <ion-img src="../assets/horiRect.png" width="100px" height="100px"></ion-img>
     
   </ion-scroll>
+</div>
 
   <hr style="margin-top: 5%;">
 
@@ -100,6 +103,7 @@
       <ion-item>
       <ion-card>
         <ion-grid>
+        <button (click)="jobClick()" class="firstCardClass">
           <ion-row>
             <!-- circle column is here -->
             <ion-col col-3>
@@ -112,30 +116,30 @@
               </div>
             </ion-col>
             <!-- circle column ends here -->
-      
             <ion-col col-9>
-              <h4>Exam Tyaari</h4>
-              <p>Marketing</p>
-              <p>Sal 50K</p>
+              <div style="float: left;">
+                <h4>Exam Tyaari</h4>
+                <p style="text-align: left;">Marketing</p>
+                <p style="text-align: left;">Sal 50K</p>
+              </div>
             </ion-col>
-      
           </ion-row>
+      </button>
         </ion-grid>
       </ion-card>
     </ion-item>
       <ion-item-options side="left">
-        <button ion-button (click)="favorite(item)">Favorite</button>
+        <button ion-button (click)="favouriteClick()">Favorite</button>
         <button ion-button color="danger" (click)="share(item)">Share</button>
       </ion-item-options>
   
       <ion-item-options side="right">
-        <button ion-button>Apply</button>
+        <button ion-button (click)="applyBtnClick()">Apply</button>
       </ion-item-options>
     </ion-item-sliding>
 </ion-list>
 
 <hr>
-
 
 
 <!-- Second card here -->
@@ -169,7 +173,7 @@
         </ion-card>
       </ion-item>
       <ion-item-options side="left">
-          <button ion-button (click)="favorite(item)">Favorite</button>
+          <button ion-button (click)="favouriteClick()">Favorite</button>
           <button ion-button color="danger" (click)="share(item)">Share</button>
         </ion-item-options>
     
@@ -211,7 +215,7 @@
       </ion-card>
     </ion-item>
     <ion-item-options side="left">
-        <button ion-button (click)="favorite(item)">Favorite</button>
+        <button ion-button (click)="favouriteClick()">Favorite</button>
         <button ion-button color="danger" (click)="share(item)">Share</button>
       </ion-item-options>
   
@@ -253,7 +257,7 @@
       </ion-card>
       </ion-item>
       <ion-item-options side="left">
-          <button ion-button (click)="favorite(item)">Favorite</button>
+          <button ion-button (click)="favouriteClick()">Favorite</button>
           <button ion-button color="danger" (click)="share(item)">Share</button>
         </ion-item-options>
     
@@ -296,7 +300,7 @@
         </ion-card>            
       </ion-item>
       <ion-item-options side="left">
-          <button ion-button (click)="favorite(item)">Favorite</button>
+          <button ion-button (click)="favouriteClick()">Favorite</button>
           <button ion-button color="danger" (click)="share(item)">Share</button>
         </ion-item-options>
     
@@ -338,7 +342,7 @@
           </ion-card>            
       </ion-item>
       <ion-item-options side="left">
-          <button ion-button (click)="favorite(item)">Favorite</button>
+          <button ion-button (click)="favouriteClick()">Favorite</button>
           <button ion-button color="danger" (click)="share(item)">Share</button>
         </ion-item-options>
     
