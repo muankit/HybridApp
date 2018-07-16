@@ -49,13 +49,6 @@ page-slider {
         color: #E60052;
         font-size: 1.3em;
     }
-    .backBtndiv{
-        position: relative;
-        float: left;
-        margin: 20px 0px 0px 0px;
-        text-align: center;
-        width: 100%;
-    }
     .footer-md::before{
         background-image: none !important;
     }
@@ -65,34 +58,14 @@ page-slider {
     }
     //ends here
 
-
-    //left arrow defined here
     //btn activated color
     .button-md.activated{
         background-color: transparent;
         box-shadow: none;
     }
-    .leftArrowDiv{
-        position: relative;
-        float: left;
-        text-align: center;
-        margin: 20px 0px 0px 20px;
-    }
-    .leftArrow{
-        padding-left: 10px;
-    }
+    
     .button-md{
         background-color: transparent;
         color: #E60052;
-    }
-    //right arrow is here
-    .rightArrow{
-        padding-left: 35px;
-    }
-    .rightArrowDiv{
-        position: relative;
-        float: left;
-        text-align: center;
-        margin: 20px 0px 0px 20px;
     }
 }

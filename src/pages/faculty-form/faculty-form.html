@@ -36,18 +36,20 @@
   <!-- gender is here -->
   <div class="appForm">
     <ion-list radio-group>
-      <ion-row>
-        <ion-col >
-            <ion-item class="male">
-              <ion-radio value="male"></ion-radio>
-            </ion-item>
-        </ion-col>
-        <ion-col>
-            <ion-item class="female">
-              <ion-radio value="femmale"></ion-radio>
-            </ion-item>
-        </ion-col>
-      </ion-row>
+      <ion-grid>
+        <ion-row>
+          <ion-col >
+              <ion-item class="male" [class.someClass]="addMaleClass">
+                <ion-radio value="male"></ion-radio>
+              </ion-item>
+          </ion-col>
+          <ion-col>
+              <ion-item class="female" [class.some2Class]="addFemaleClass">
+                <ion-radio value="female"></ion-radio>
+              </ion-item>
+          </ion-col>
+        </ion-row>
+      </ion-grid>
     </ion-list>        
   </div>
 
@@ -63,21 +65,57 @@
 
 <hr>
 <!-- qualification div is here -->
-  <div class="qualDiv">
+
+  <!-- <div class="qualDiv">
     <ion-label class="labelClass" style="font-family: 'Actor', sans-serif;">Qualification</ion-label>
     <ion-card>
       <ion-card-header (click)="QualtoggleAccordion()" style="font-family: 'Didact Gothic', sans-serif">Highest
       </ion-card-header>
       <ion-card-content #qualCardCon>
         <ion-input placeholder="Degree"></ion-input>
-        <ion-input placeholder="Year Of Completion"></ion-input>
+        <ion-input placeholder="Year Of Completion" type="tel"></ion-input>
       </ion-card-content>
     </ion-card>
+  </div> -->
+
+  <div>
+    <ion-grid class="qualGrid">
+      <ion-row>
+
+        <ion-col>
+          <ion-label class="labelClass" style="font-family: 'Actor', sans-serif;">Qualification</ion-label>
+        </ion-col>
+
+        <ion-col class="qualBtnColClass">
+          <button ion-button class="qualBtnClass">
+            <ion-icon name="add"></ion-icon>
+          </button>
+        </ion-col>
+
+      </ion-row>
+    </ion-grid>
+
+    <ion-card class="schExpCard">
+      <div class="schExpOuterDiv">
+        <button class="schExpInnerDiv">
+          <ion-icon name="md-create" style="color: #E60052;"></ion-icon>
+        </button>
+        <button class="schExpInnerDiv">
+          <ion-icon name="md-trash" style="color: #E60052;"></ion-icon>
+        </button>
+      </div>
+
+      <div>
+        <ion-input placeholder="Degree"></ion-input>
+        <ion-input placeholder="Year"></ion-input>
+      </div>
+    </ion-card>
   </div>
+
 <!-- qual ends here -->
-<hr>
+
 <!-- exp is here -->
-  <div class="expDiv">
+  <!-- <div class="expDiv">
     <ion-label class="labelClass" style="font-family: 'Actor', sans-serif;">Experience</ion-label>
     <ion-card>
       <ion-card-header (click)="ExpSchtoggleAccordion()" style="font-family: 'Didact Gothic', sans-serif">School
@@ -114,13 +152,65 @@
                       <ion-datetime placeholder="End Date" displayFormat="MM/YYYY"></ion-datetime>
                   </ion-col>
                 </ion-row>
-              </ion-grid>            <ion-input placeholder="Exam"></ion-input>
+              </ion-grid>            
+            <ion-input placeholder="Exam"></ion-input>
             <ion-input placeholder="Subject"></ion-input>
             <ion-input placeholder="City"></ion-input>
         </ion-card-content>
       </ion-card>
-  </div>
+  </div> -->
 <!-- exp ends here -->
+
+
+<!-- exp is here -->
+<div class="expDiv">
+    <div>
+      <ion-grid class="expGrid">
+        <ion-row>
+          <ion-col>
+            <ion-label class="labelClass" style="font-family: 'Actor', sans-serif; color: #E60052;">Experience</ion-label>
+          </ion-col>
+          
+          <ion-col class="expColClass">
+            <button ion-button class="ExpAddBtnClass" (click)="addExpBtn()">
+              <ion-icon name="md-add" style="color: #E60052;"></ion-icon>
+            </button>
+          </ion-col>
+        </ion-row>
+      </ion-grid>
+    </div>    
+
+  <div>
+    <ion-card class="schExpCard">
+        <div class="schExpOuterDiv">
+          <button class="schExpInnerDiv">
+            <ion-icon name="md-create" style="color: #E60052;"></ion-icon>
+          </button>
+          <button class="schExpInnerDiv">
+            <ion-icon name="md-trash" style="color: #E60052;"></ion-icon>
+          </button>
+        </div>
+      <ion-input placeholder="Organisation Name"></ion-input>
+      <ion-grid>
+        <ion-row>
+          <ion-col>
+              <ion-datetime placeholder="Start Date" displayFormat="MM/YYYY"></ion-datetime>
+          </ion-col>
+          <ion-col>
+              <ion-datetime placeholder="End Date" displayFormat="MM/YYYY"></ion-datetime>
+          </ion-col>
+        </ion-row>
+      </ion-grid>   
+
+      <ion-input placeholder="Exam "></ion-input>
+      <ion-input placeholder="Subject" ></ion-input>
+      <ion-input placeholder="City" ></ion-input>
+  
+    </ion-card>
+  </div>
+</div>
+<!-- exp ends here -->
+
 
 <!-- terms and conitions is here -->
 <ion-item class="termConditionDiv">

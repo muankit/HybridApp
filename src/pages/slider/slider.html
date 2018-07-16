@@ -28,28 +28,23 @@
   <!-- <img src="../assets/imgs/Right.png" class="bottom" style="width : 8% ; height : 5%" ng-click="nextpage()"> -->
   </ion-content>
   <ion-footer>
-
     <ion-grid>
       <ion-row>
-        <ion-col>
-          <div class="leftArrowDiv">
-            <button ion-button class="leftArrow" (click)="goLeft()">
+        <ion-col col-4 style="text-align: center;">
+  
+            <button ion-button  (click)="goLeft()">
               <ion-icon name="ios-arrow-back-outline"></ion-icon>
             </button>
-          </div>
+          
         </ion-col>
-        <ion-col>
-          <div class="backBtndiv">
-            <button ion-button class="backBtn" (click)="skipBtn()">SKIP</button>
-          </div>
+        <ion-col col-4 style="text-align: center;">
+            <button ion-button class="backBtn"  (click)="skipBtn()">SKIP</button>
         </ion-col>
-        <ion-col>
-          <div class="rightArrowDiv">
-            <button ion-button class="rightArrow" (click)="goRight()">
+        <ion-col col-4 style="text-align: center;">
+            <button ion-button (click)="goRight()">
               <ion-icon name="ios-arrow-forward-outline"></ion-icon>
             </button>
-          </div>
         </ion-col>
       </ion-row>
-    </ion-grid>  
+    </ion-grid>
   </ion-footer>

@@ -6,6 +6,7 @@ import { SplashScreen } from '@ionic-native/splash-screen';
 import { LoginPage } from '../pages/login/login';
 import { FacultyDashboardPage } from '../pages/faculty-dashboard/faculty-dashboard';
 import { InstituteDashboardPage } from '../pages/institute-dashboard/institute-dashboard';
+import { FacultyFormPage } from '../pages/faculty-form/faculty-form';
 
 @Component({
   templateUrl: 'app.html'
