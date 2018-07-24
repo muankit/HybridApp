@@ -3,10 +3,25 @@
 <ion-header>
 
   <ion-navbar class="navBarClass">
-      <button ion-button icon-only menuToggle class="menuBtn">
-          <ion-icon name="menu"></ion-icon>
-      </button>
-    <ion-title style="font-family: 'Oxygen', sans-serif;">Dashboard</ion-title>
+    <ion-grid>
+      <ion-row>
+        <ion-col col-2>
+          <button ion-button icon-only menuToggle class="menuBtn">
+            <ion-icon name="menu"></ion-icon>
+          </button>
+        </ion-col>
+    
+        <ion-col col-8 style="text-align: center;">
+          <ion-title style="font-family: 'Oxygen', sans-serif;">
+              Dashboard
+          </ion-title>
+        </ion-col>
+        <ion-col col-2>
+
+        </ion-col>
+
+      </ion-row>
+    </ion-grid>
   </ion-navbar>
 
 </ion-header>
@@ -15,21 +30,66 @@
 <ion-content padding>
   <ion-list>
     <ion-item>
-      <h4>Exam Tyaari</h4>
-      <p style="text-align: left;">Marketing</p>
-      <p style="text-align: left;">Sal 50K</p>
+      <ion-grid>
+        <ion-row>
+          <ion-col>
+              <h4>Exam Tyaari</h4>
+              <p >Marketing</p>
+              <p >Sal 50K</p>
+          </ion-col>
+
+          <ion-col class="colBtnClass">
+            <ion-row class="selectBtnClass">
+                <button ion-button (click)="selctBtnClick()">Select</button>
+            </ion-row>
+            <ion-row>
+                <button ion-button (click)="deleteBtnClick()">Delete</button>
+            </ion-row>
+          </ion-col>
+        </ion-row>
+      </ion-grid> 
     </ion-item>
 
     <ion-item>
-      <h4>Doctor Plus</h4>
-      <p>Telecaller</p>
-      <p>Sal 40K</p>
+        <ion-grid>
+            <ion-row>
+              <ion-col>
+                  <h4>Doctor Plus</h4>
+                  <p>Telecaller</p>
+                  <p>Sal 40K</p>
+              </ion-col>
+    
+              <ion-col>
+                <ion-row class="selectBtnClass">
+                    <button ion-button>Select</button>
+                </ion-row>
+                <ion-row>
+                    <button ion-button>Delete</button>
+                </ion-row>
+              </ion-col>
+            </ion-row>
+          </ion-grid> 
     </ion-item>
 
     <ion-item>
-      <h4>ALLEN</h4>
-      <p>Physics Faculty</p>
-      <p>Sal 35K</p>
+        <ion-grid>
+            <ion-row>
+              <ion-col>
+                  <h4>ALLEN</h4>
+                  <p>Physics Faculty</p>
+                  <p>Sal 35K</p>
+              </ion-col>
+    
+              <ion-col>
+                <ion-row class="selectBtnClass">
+                    <button ion-button>Select</button>
+                </ion-row>
+                <ion-row>
+                    <button ion-button>Delete</button>
+                </ion-row>
+              </ion-col>
+            </ion-row>
+          </ion-grid> 
     </ion-item>
   </ion-list>
 </ion-content>

@@ -21,6 +21,7 @@ import { FacultyClickPage } from '../pages/faculty-click/faculty-click';
 import { CallNumber } from '../../node_modules/@ionic-native/call-number';
 import { FacultyDashboardPage } from '../pages/faculty-dashboard/faculty-dashboard';
 import { InstituteDashboardPage } from '../pages/institute-dashboard/institute-dashboard';
+import { EditProfilePage } from '../pages/edit-profile/edit-profile';
 
 
 @NgModule({
@@ -38,7 +39,8 @@ import { InstituteDashboardPage } from '../pages/institute-dashboard/institute-d
     ResumeOverviewPage,
     FacultyClickPage,
     FacultyDashboardPage,
-    InstituteDashboardPage
+    InstituteDashboardPage,
+    EditProfilePage
   ],
   imports: [
     BrowserModule,
@@ -63,7 +65,8 @@ import { InstituteDashboardPage } from '../pages/institute-dashboard/institute-d
     ResumeOverviewPage,
     FacultyClickPage,
     FacultyDashboardPage,
-    InstituteDashboardPage
+    InstituteDashboardPage,
+    EditProfilePage
   ],
   providers: [
     StatusBar,

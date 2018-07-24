@@ -1,5 +1,5 @@
 import { Component, ViewChild } from '@angular/core';
-import { NavController, ToastController , Content} from 'ionic-angular';
+import { NavController, ToastController , Content, NavParams} from 'ionic-angular';
 import { JobClickPage } from '../job-click/job-click';
 import { ResumeOverviewPage } from '../resume-overview/resume-overview';
 
@@ -11,9 +11,12 @@ export class HomePage {
 
   @ViewChild("horiScrollContent") content : Content;
 
-  constructor(public navCtrl: NavController , public toastCtrl : ToastController) {
+  constructor(public navCtrl: NavController , public toastCtrl : ToastController , public navParams : NavParams) {
 
   }
+
+  
+
   jobClick(){
     this.navCtrl.push(JobClickPage);
   }

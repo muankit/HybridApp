@@ -1,13 +1,71 @@
-.header-md::after{
-    background-image: none !important;
-}
-// .mainBack{
-//     background-image: url(../assets/menuBack.jpg);
-//     background-repeat: no-repeat;
-//     background-size: cover;
-// }
-.profileImageDiv{
-    background-image: url(../assets/menuBack.jpg);
-    background-repeat: no-repeat;
+//circle is here
+.img-circle {
+    position: relative;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    background-image: url(../assets/drawer-profile.jpg);
+    background-repeat: no-repeat center  center fixed;
     background-size: cover;
+}
+.img-thumbnail {
+    display:inline-block;
+    overflow: hidden;
+    height: 50px;
+    border: 0.5px solid #f2f2f2;
+}
+//circle ends here
+
+//toolbar background
+.toolbar-background-md{
+    border-color: transparent;
+    background: transparent;
+}
+
+//name and email class
+.nameClass{
+    font-size: 1.3em;
+    font-weight: bold;
+    margin: 8px 0px 0px 0px;
+
+}
+.emailClass{
+    font-size: 0.9em;
+    margin: 0px;
+    color: #959595;
+}
+
+//header name and email class
+.headerRowClass{
+    margin: 40px 0px 10px 15px;
+}
+
+//icon class
+.iconMarginHomeClass{
+    margin-right: 25px;
+    margin-left: 35px ;
+}
+
+.iconMarginSettingClass{
+    margin-right: 26px;
+    margin-left: 35px ;
+}
+
+.iconMarginHelpClass{
+    margin-right: 31px;
+    margin-left: 38px ;
+}
+
+.iconMarginDashClass{
+    margin-right: 24px;
+    margin-left: 35px ;
+
+}
+.iconMarginEditClass{
+    margin-right: 24px;
+    margin-left: 35px ;
+}
+
+.itemList{
+    margin-top: 20px;
 }

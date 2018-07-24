@@ -12,6 +12,8 @@ import { EntrySlidesPage } from '../entry-slides/entry-slides';
 })
 export class LoginPage {
 
+  // paramObj= {title : 'otpSuccess'};
+
   constructor(public navCtrl: NavController, public navParams: NavParams , public alertCtrl : AlertController) {
   //  keyboard.disableScroll(true);
   }

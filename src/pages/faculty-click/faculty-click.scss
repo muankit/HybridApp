@@ -135,5 +135,10 @@ page-faculty-click {
         -webkit-box-shadow : none;
     }
 
+    //call btn csss
+    .button-md:hover:not(.disable-hover){
+        background-color: #E60052;
+    }
+
     
 }
